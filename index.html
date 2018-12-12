@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="font/font.css">
+		<link rel="stylesheet" href="css/style-modal.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;">
+		<title>Planet Toys</title>
+	</head>
+	<body>
+		<header>
+			<div class="header-top">
+				<div class="header-top-centre">
+					<div class="container-menu">
+						<div class="conteiner">
+							<a href="#win2" class="button-menu">Обратный звонок</a>
+						</div>
+						<!-- Модальное окно 1 -->
+						<a href="#x" class="overlay-menu" id="win2"></a>
+						<div class="popup-menu">
+							
+							<div class="poup-1">
+								<p>Обратный звонок</p>
+								<form action="">
+									<input type="name" placeholder="Ваше имя">
+									<input type="number" placeholder="Ваш телефон">
+									<button>Отправить</button>
+								</form>
+							</div>
+							<div class="poup-2">
+								<p>Подписаться на обновления</p>
+								<form action="">
+									<input type="name" placeholder="Ваше имя">
+									<input type="number" placeholder="Ваш e-mail">
+									<button>Отправить</button>
+								</form>
+							</div>
+							<div class="poup-3">
+								<p>Спасибо за обращение</p>
+								<p>Мы свяжемся с Вами в ближайшее время</p>
+							</div>
+							
+							<a class="close-menu" title="Закрыть" href="#close"></a>
+						</div>
+					</div>
+					<p>
+						<a href=""><img src="img/phone.png" alt="phone"></a>
+						<a href="tel:+79566373333">+ 7 (956) 637 33 33</a>
+					</p>
+					<p>
+						<a href=""><img src="img/mail.png" alt="mail"></a>
+						<a href="info@planeta-igrushek.ru">info@planeta-igrushek.ru</a>
+					</p>
+					<p>
+						<img src="img/oclock.png" alt="oclock">
+						Пн-Пт с 10:00 до 20:00
+					</p>
+				</div>
+			</div>
+			<div class="header-info">
+				<div class="header-info-centre">
+					<a href="" class="logo-href"><img src="img/logo.png" alt="logo"></a>
+					<form action="" method="get" class="search-1">
+						<input name="s" placeholder="Поиск товара по каталогу" type="search">
+						<button type="submit" class="button-1">Найти</button>
+						<button type="submit" class="button-2"></button>
+					</form>
+					<div>
+						<a href="">
+							<img src="img/profile.png" alt="profile">
+						</a>
+						<p>Личный кабинет <span>Константин</span></p>
+						<a href="">
+							<img src="img/shop-bag.png" alt="shop-bag">
+							<p>2</p>
+						</a>
+						<p>Всего <span>1 125 руб.</span></p>
+					</div>
+					<div class="search-2">
+						<form id="demo-b">
+							<input type="search" placeholder="Поиск товара">
+						</form>
+					</div>
+					<div class="burger-menu">
+						<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+						<label class="btn-menu" for="hmt">
+							<span class="first"></span>
+							<span class="second"></span>
+							<span class="third"></span>
+						</label>
+						<ul class="hidden-menu">
+							<li><a href="">Акции</a></li>
+							<li><a href="">Доставка и самовывоз</a></li>
+							<li><a href="">Оплата</a></li>
+							<li><a href="">Гарантии качества</a></li>
+							<li><a href="">О компании</a></li>
+							<li><a href="">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header-nav">
+				<nav class="dws-menu">
+					<ul>
+						<li class="dropmenu"><a href="#"><img src="img/grid.png" alt="grid">КАТАЛОГ</a>
+						<ul>
+							<li><a href="#">Машинки</a></li>
+							<li><a href="#">КУКЛЫ</a></li>
+							<li><a href="#">КОнстркуторы</a></li>
+							<li><a href="#">Дома</a></li>
+							<li><a href="#">ПазЛЫ</a></li>
+							<li><a href="#">Машинки</a></li>
+							<li><a href="#">КУКЛЫ</a></li>
+							<li><a href="#">КОнстркуторы</a></li>
+							<li><a href="#">Дома</a></li>
+							<li><a href="#">ПазЛЫ</a></li>
+							<li><a href="#">Машинки</a></li>
+							<li><a href="#">КУКЛЫ</a></li>
+							<li><a href="#">КОнстркуторы</a></li>
+							<li><a href="#">Дома</a></li>
+							<li><a href="#">ПазЛЫ</a></li>
+						</ul></li>
+						<li class="li-none"><a href="#">Акции</a></li>
+						<li class="li-none"><a href="#">Доставка и самовывоз</a></li>
+						<li class="li-none"><a href="#">Оплата</a></li>
+						<li class="li-none"><a href="#">Гарантии качества</a></li>
+						<li class="li-none"><a href="#">О компании</a></li>
+						<li class="li-none"><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id="content-overflow">
+			<div class="content-nav-overflow">
+				<div class="content-nav">
+					<p>
+						<a href="#">Главная</a>
+					</p>
+				</div>
+			</div>
+			<div class="content">
+				<div class="toys-stock">
+					<div class="toys-stock-1">
+						<img src="img/toy-1.png" alt="toy-1">
+						<a href="#">
+							<p class="toy-name">Игрушка Hasbro Transformers Cyberverse</p>
+						</a>
+						<p class="toy-price toy-price-1">Старая цена <span>1 099 руб.</span></p>
+						<p class="toy-price toy-price-2">Новая цена <span>1 000 руб.</span></p>
+						<a href="#" class="toy-button">Купить в 1 клик</a>
+						<p class="toy-stock-days">Акция действует с 23.11.2018 по 01.12.2018</p>
+					</div>
+					<div class="toys-stock-2">
+						<div>
+							<p>Машинка радиоуправляемая</p>
+							<img src="img/toy-2.png" alt="toy-2">
+							<a href="" class="toy-button-2">Купить</a>
+						</div>
+						<div>
+							<p>Машинка радиоуправляемая</p>
+							<img src="img/toy-3.png" alt="toy-3">
+							<a href="" class="toy-button-2">Купить</a>
+							<p class="price-stock">-25%</p>
+						</div>
+					</div>
+				</div>
+				<div class="popular-goods">
+					<p class="headline">Популярные товары</p>
+					<div id="slider">
+						<input type="radio" name="slider" id="slide1" checked="">
+						<input type="radio" name="slider" id="slide2">
+						<input type="radio" name="slider" id="slide3">
+						<input type="radio" name="slider" id="slide4">
+						<input type="radio" name="slider" id="slide5">
+						<div id="slides">
+							<div id="overflow">
+								<div class="inner">
+									<div class="page">
+										<div class="img-popular-toy">
+											<p class="new">Новинка</p>
+											<p class="new price-2">-30%</p>
+											<img src="img/popular-toy-1.png" alt="popular-toy" class="image-toy">
+											<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
+										</div>
+										<div class="star-review">
+											<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
+											<p class="review">отзывы <span>(27)</span></p>
+										</div>
+										<div class="price-popular-toy">
+											<p class="old-price">9 500 руб.</p>
+											<p class="new-price">7999 руб.</p>
+										</div>
+										<a href="#">
+											<div class="button-popular-toy">
+												<img src="img/shop-bag-toy.png" alt="shop-bag-toy">
+												<p>Добавить в корзину</p>
+											</div>
+										</a>
+									</div>
+									<div class="page">
+										<div class="img-popular-toy">
+											<p class="new">Новинка</p>
+											<p class="new price-2">-30%</p>
+											<img src="img/popular-toy-2.png" alt="popular-toy" class="image-toy image-toy-2">
+											<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
+										</div>
+										<div class="star-review">
+											<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
+											<p class="review">отзывы <span>(27)</span></p>
+										</div>
+										<div class="price-popular-toy">
+											<p class="old-price">9 500 руб.</p>
+											<p class="new-price">7999 руб.</p>
+										</div>
+										<a href="#">
+											<div class="button-popular-toy">
+												<img src="img/shop-bag-toy.png" alt="shop-bag-toy">
+												<p>Добавить в корзину</p>
+											</div>
+										</a>
+									</div>
+									<div class="page">
+										<div class="img-popular-toy">
+											<p class="new">Новинка</p>
+											<p class="new price-2">-30%</p>
+											<img src="img/popular-toy-3.png" alt="popular-toy" class="image-toy image-toy-3">
+											<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
+										</div>
+										<div class="star-review">
+											<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
+											<p class="review">отзывы <span>(27)</span></p>
+										</div>
+										<div class="price-popular-toy">
+											<p class="old-price">9 500 руб.</p>
+											<p class="new-price">7999 руб.</p>
+										</div>
+										<a href="#">
+											<div class="button-popular-toy">
+												<img src="img/shop-bag-toy.png" alt="shop-bag-toy">
+												<p>Добавить в корзину</p>
+											</div>
+										</a>
+									</div>
+									<div class="page">
+										<div class="img-popular-toy">
+											<p class="new">Новинка</p>
+											<p class="new price-2">-30%</p>
+											<img src="img/popular-toy-4.png" alt="popular-toy" class="image-toy image-toy-4">
+											<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
+										</div>
+										<div class="star-review">
+											<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
+											<p class="review">отзывы <span>(27)</span></p>
+										</div>
+										<div class="price-popular-toy">
+											<p class="old-price">9 500 руб.</p>
+											<p class="new-price">7999 руб.</p>
+										</div>
+										<a href="#">
+											<div class="button-popular-toy">
+												<img src="img/shop-bag-toy.png" alt="shop-bag-toy">
+												<p>Добавить в корзину</p>
+											</div>
+										</a>
+									</div>
+									<div class="page">
+										<div class="img-popular-toy">
+											<p class="new">Новинка</p>
+											<p class="new price-2">-30%</p>
+											<img src="img/popular-toy-1.png" alt="popular-toy" class="image-toy">
+											<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
+										</div>
+										<div class="star-review">
+											<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
+											<p class="review">отзывы <span>(27)</span></p>
+										</div>
+										<div class="price-popular-toy">
+											<p class="old-price">9 500 руб.</p>
+											<p class="new-price">7999 руб.</p>
+										</div>
+										<a href="#">
+											<div class="button-popular-toy">
+												<img src="img/shop-bag-toy.png" alt="shop-bag-toy">
+												<p>Добавить в корзину</p>
+											</div>
+										</a>
+									</div>
+									<div class="page">
+										<div class="img-popular-toy">
+											<p class="new">Новинка</p>
+											<p class="new price-2">-30%</p>
+											<img src="img/popular-toy-2.png" alt="popular-toy" class="image-toy image-toy-2">
+											<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
+										</div>
+										<div class="star-review">
+											<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
+											<p class="review">отзывы <span>(27)</span></p>
+										</div>
+										<div class="price-popular-toy">
+											<p class="old-price">9 500 руб.</p>
+											<p class="new-price">7999 руб.</p>
+										</div>
+										<a href="#">
+											<div class="button-popular-toy">
+												<img src="img/shop-bag-toy.png" alt="shop-bag-toy">
+												<p>Добавить в корзину</p>
+											</div>
+										</a>
+									</div>
+									<div class="page">
+										<div class="img-popular-toy">
+											<p class="new">Новинка</p>
+											<p class="new price-2">-30%</p>
+											<img src="img/popular-toy-3.png" alt="popular-toy" class="image-toy image-toy-3">
+											<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
+										</div>
+										<div class="star-review">
+											<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
+											<p class="review">отзывы <span>(27)</span></p>
+										</div>
+										<div class="price-popular-toy">
+											<p class="old-price">9 500 руб.</p>
+											<p class="new-price">7999 руб.</p>
+										</div>
+										<a href="#">
+											<div class="button-popular-toy">
+												<img src="img/shop-bag-toy.png" alt="shop-bag-toy">
+												<p>Добавить в корзину</p>
+											</div>
+										</a>
+									</div>
+									<div class="page">
+										<div class="img-popular-toy">
+											<p class="new">Новинка</p>
+											<p class="new price-2">-30%</p>
+											<img src="img/popular-toy-4.png" alt="popular-toy" class="image-toy image-toy-4">
+											<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
+										</div>
+										<div class="star-review">
+											<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
+											<p class="review">отзывы <span>(27)</span></p>
+										</div>
+										<div class="price-popular-toy">
+											<p class="old-price">9 500 руб.</p>
+											<p class="new-price">7999 руб.</p>
+										</div>
+										<a href="#">
+											<div class="button-popular-toy">
+												<img src="img/shop-bag-toy.png" alt="shop-bag-toy">
+												<p>Добавить в корзину</p>
+											</div>
+										</a>
+									</div>
+									</div> <!--inner-->
+									</div> <!--overflow-->
+									</div> <!--slides-->
+									<div id="controls">
+										<label for="slide1"></label>
+										<label for="slide2"></label>
+										<label for="slide3"></label>
+										<label for="slide4"></label>
+										<label for="slide5"></label>
+									</div>
+								</div>
+							</div>
+							<div class="product-categories">
+								<p class="headline">Категории товаров</p>
+								<div class="categories">
+									<a href="#">
+										<div>
+											<img src="img/categories-toy-1.png" alt="">
+											<p>Для самых маленьких</p>
+										</div>
+									</a>
+									<a href="#">
+										<div>
+											<img src="img/categories-toy-2.png" alt="">
+											<p>Для мальчиков</p>
+										</div>
+									</a>
+									<a href="#">
+										<div>
+											<img src="img/categories-toy-3.png" alt="">
+											<p>Для девочек</p>
+										</div>
+									</a>
+									<a href="#">
+										<div>
+											<img src="img/categories-toy-4.png" alt="">
+											<p>Развивающие</p>
+										</div>
+									</a>
+									<a href="#">
+										<div>
+											<img src="img/categories-toy-5.png" alt="">
+											<p>Логические</p>
+										</div>
+									</a>
+									<a href="#">
+										<div>
+											<img src="img/categories-toy-6.png" alt="">
+											<p>Конструкторы</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="toy-brands">
+								<p class="headline">Наши бренды игрушек</p>
+								<div class="brands">
+									<div id="slider">
+										<input type="radio" name="slider-2" id="slide1-2" checked="">
+										<input type="radio" name="slider-2" id="slide2-2">
+										<input type="radio" name="slider-2" id="slide3-2">
+										<input type="radio" name="slider-2" id="slide4-2">
+										<input type="radio" name="slider-2" id="slide5-2">
+										<div id="slides">
+											<div id="overflow">
+												<div class="inner">
+													<a href="">
+														<div class="page">
+															<img src="img/brand-1.png" alt="">
+														</div>
+													</a>
+													<a href="">
+														<div class="page">
+															<img src="img/brand-2.png" alt="">
+														</div>
+													</a>
+													<a href="">
+														<div class="page">
+															<img src="img/brand-3.png" alt="">
+														</div>
+													</a>
+													<a href="">
+														<div class="page">
+															<img src="img/brand-4.png" alt="">
+														</div>
+													</a>
+													<a href="">
+														<div class="page">
+															<img src="img/brand-5.png" alt="">
+														</div>
+													</a>
+													<a href="">
+														<div class="page">
+															<img src="img/brand-6.png" alt="">
+														</div>
+													</a>
+													<a href="">
+														<div class="page">
+															<img src="img/brand-1.png" alt="">
+														</div>
+													</a>
+													<a href="">
+														<div class="page">
+															<img src="img/brand-2.png" alt="">
+														</div>
+													</a>
+													<a href="">
+														<div class="page">
+															<img src="img/brand-3.png" alt="">
+														</div>
+													</a>
+													<a href="">
+														<div class="page">
+															<img src="img/brand-4.png" alt="">
+														</div>
+													</a>
+													<a href="">
+														<div class="page">
+															<img src="img/brand-5.png" alt="">
+														</div>
+													</a>
+													<a href="">
+														<div class="page">
+															<img src="img/brand-6.png" alt="">
+														</div>
+													</a>
+													</div> <!--inner-->
+													</div> <!--overflow-->
+													</div> <!--slides-->
+													<div id="controls">
+														<label for="slide1-2"></label>
+														<label for="slide2-2"></label>
+														<label for="slide3-2"></label>
+														<label for="slide4-2"></label>
+														<label for="slide5-2"></label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="about-company">
+											<p class="headline">О компании</p>
+											<p class="about-company-text"><span>Название «LEGO» – это аббревиатура, образованная от двух датских слов «leg godt», которые означают «играть с увлечением». Это наше название, и оно отражает наш идеал.</span> <span>Компания LEGO Group была основана в 1932 году Оле Кирком Кристиансеном (Ole Kirk Christiansen). Компания переходила от отца к сыну, и сейчас ею владеет Кьелль Кирк Кристиансен (Kjeld Kirk Kristiansen), правнук основателя.</span> <span>За минувшие почти 80 лет компания прошла долгий путь – от маленькой столярной мастерской до современного международного предприятия, которое сегодня по объёму продаж является третьим в мире производителем игрушек.</span></p>
+										</div>
+										<div class="purchase-benefits">
+											<p class="headline">Преимущества покупки у нас</p>
+											<div class="purchase">
+												<div>
+													<img src="img/purchase-1.png" alt="">
+													<p><span>Официальный продавец</span>Мы являемся официальным продавцом всех представленных в нашем магазине брендов.</p>
+												</div>
+												<div>
+													<img src="img/purchase-2.png" alt="">
+													<p><span>Доставка по всей России</span>Доставка курьером, 3500 пунктов выдачи и доставка Почтой России.</p>
+												</div>
+												<div>
+													<img src="img/purchase-3.png" alt="">
+													<p><span>Удобные способы оплаты</span>Мы являемся официальным продавцом всех представленных в нашем магазине брендов.</p>
+												</div>
+												<div>
+													<img src="img/purchase-4.png" alt="">
+													<p><span>Гарантия на все товары</span>Доставка курьером, 3500 пунктов выдачи и доставка Почтой России.</p>
+												</div>
+												<div>
+													<img src="img/purchase-5.png" alt="">
+													<p><span>Клуб привилегий</span>Получайте бонусные рубли за покупки и оплачивайте ими до 15% стоимости своего заказа.</p>
+												</div>
+												<div>
+													<img src="img/purchase-4.png" alt="">
+													<p><span>Гарантия на все товары</span>Доставка курьером, 3500 пунктов выдачи и доставка Почтой России.</p>
+												</div>
+											</div>
+										</div>
+										<div class="updates-form">
+											<div>
+												<img src="img/logo.png" alt="">
+											</div>
+											<div>
+												<p>Подписывайтесь на обновления</p>
+												<form action="" method="get">
+													<input name="email" placeholder="Ваш E-mail" type="email">
+													<button type="submit" class="button-2">Подписаться</button>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								<footer>
+									<div class="footer">
+										<div class="logo-footer">
+											<img src="img/logo.png" alt="">
+											<p>© 2018 – Все права защищены</p>
+										</div										Б/вшмЮ
+										>
+										<ul>
+											<li>Меню</li>
+											<a href="">
+												<li>Акции</li>
+											</a>
+											<a href="">
+												<li>Доставка и самовывоз</li>
+											</a>
+											<a href="">
+												<li>Оплата</li>
+											</a>
+											<a href="">
+												<li>Гарантии качества</li>
+											</a>
+											<a href="">
+												<li>О компании</li>
+											</a>
+											<a href="">
+												<li>Контакты</li>
+											</a>
+										</ul>
+										<ul>
+											<li>Каталог</li>
+											<a href="">
+												<li>Для самых маленьких</li>
+											</a>
+											<a href="">
+												<li>Для мальчиков</li>
+											</a>
+											<a href="">
+												<li>Для девочек</li>
+											</a>
+											<a href="">
+												<li>Развивающие</li>
+											</a>
+											<a href="">
+												<li>Логические</li>
+											</a>
+											<a href="">
+												<li>Конструкторы</li>
+											</a>
+										</ul>
+										<ul>
+											<li>Контакты</li>
+											<li class="oclock-2"><img src="img/oclock-green.png" alt="">Пн-Пт с 10:00 до 20:00 </li>
+											<a href="tel:+79566373333">
+												<li><img src="img/phone-green.png" alt="">+ 7 (956) 637 33 33</li>
+											</a>
+											<a href="">
+												<li><img src="img/mail-green.png" alt=""><span>info@planeta-igrushek.ru</span></li>
+											</a>
+										</ul>
+									</div>
+								</footer>
+							</body>
+						</html>

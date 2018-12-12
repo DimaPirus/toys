@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'MuseoSansCyrl_500';
+    src: url('MuseoSansCyrl-500Italic.woff2') format('woff2'),
+        url('MuseoSansCyrl-500Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_300';
+    src: url('MuseoSansCyrl-300.woff2') format('woff2'),
+        url('MuseoSansCyrl-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_900';
+    src: url('MuseoSansCyrl-900.woff2') format('woff2'),
+        url('MuseoSansCyrl-900.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_700';
+    src: url('MuseoSansCyrl-700.woff2') format('woff2'),
+        url('MuseoSansCyrl-700.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_700';
+    src: url('MuseoSansCyrl-700Italic.woff2') format('woff2'),
+        url('MuseoSansCyrl-700Italic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_100';
+    src: url('MuseoSansCyrl-100.woff2') format('woff2'),
+        url('MuseoSansCyrl-100.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_100';
+    src: url('MuseoSansCyrl-100Italic.woff2') format('woff2'),
+        url('MuseoSansCyrl-100Italic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_500';
+    src: url('MuseoSansCyrl-500.woff2') format('woff2'),
+        url('MuseoSansCyrl-500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_300';
+    src: url('MuseoSansCyrl-300Italic.woff2') format('woff2'),
+        url('MuseoSansCyrl-300Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_900';
+    src: url('MuseoSansCyrl-900Italic.woff2') format('woff2'),
+        url('MuseoSansCyrl-900Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('Montserrat-Medium.woff2') format('woff2'),
+        url('Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('ProximaNova-Regular.woff2') format('woff2'),
+        url('ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
