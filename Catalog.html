@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="css/catalog.css">
 		<link rel="stylesheet" href="font/font.css">
 		<link rel="stylesheet" href="css/style-modal.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/basket.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;">
 		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -66,10 +67,23 @@
 						<img src="img/profile.png" alt="profile">
 					</a>
 					<p>Личный кабинет <span>Константин</span></p>
-					<a href="">
-						<img src="img/shop-bag.png" alt="shop-bag">
-						<p>2</p>
-					</a>
+					<div class="container-basket">
+						<div>
+							<a href="#bask2" class="button-bask"><img src="img/shop-bag.png" alt=""><p>2</p></a>
+						</div>
+						<!-- Модальное окно 1 -->
+						<a href="#x" class="overlay-bask" id="bask2"></a>
+						<div class="popup-bask">
+							<div class="basket">
+								<p>Ваш товар добавлен в корзину</p>
+								<div>
+									<a href="#">Продолжить покупки</a>
+									<a href="#">Перейти в корзину</a>
+								</div>
+							</div>
+							<a class="close-bask" title="Закрыть" href="#close"></a>
+						</div>
+					</div>
 					<p>Всего <span>1 125 руб.</span></p>
 				</div>
 				<div class="search-2">
@@ -98,7 +112,7 @@
 		<div class="header-nav">
 			<nav class="dws-menu">
 				<ul>
-					<li class="dropmenu"><a href="#"><img src="img/grid.png" alt="grid">КАТАЛОГ</a>
+					<li class="dropmenu"><img src="img/grid.png" alt="grid">КАТАЛОГ
 					<ul>
 						<li><a href="#">Машинки</a></li>
 						<li><a href="#">КУКЛЫ</a></li>
@@ -141,68 +155,76 @@
 				<p class="headline">Каталог товаров</p>
 				<div class="catalog">
 					<div class="left-sidebar">
-						<div id="show-hide">
-							<input title=".." id="hide" name="hide" type="checkbox" />
-							<label for="hide" class="label">Цена</label>
-							<div class="block-hide">
-								<div class="slider">
-									<p>
-										<input type="text" id="amount" placeholder="от">
-										<input type="text" id="amount_1" placeholder="до">
-									</p>
-									<div id="slider-range"></div>
-									<p class="close-slider"><a href=""><img src="img/close-slider.png" alt=""><span>Сбросить фильтр</span></a></p>
-								</div>
-							</div>
-						</div>
-						<div id="show-hide">
-							<input title=".." id="hide-1" name="hide-1" type="checkbox" />
-							<label for="hide-1" class="label">Бренды</label>
-							<div class="block-hide brands">
-								<div class="checkbox">
-									<input id="check1" type="checkbox" name="check" value="check1">
-									<label for="check1">Lego</label>
-									<input id="check2" type="checkbox" name="check" value="check2">
-									<label for="check2">Brand 1</label>
-									<input id="check3" type="checkbox" name="check" value="check3">
-									<label for="check3">Brand 1</label>
-									<input id="check4" type="checkbox" name="check" value="check4">
-									<label for="check4">Brand 1</label>
-									<input id="check5" type="checkbox" name="check" value="check5">
-									<label for="check5">Brand 1</label>
-								</div>
-							</div>
-						</div>
-						<div id="show-hide">
-							<input title=".." id="hide-2" name="hide-2" type="checkbox" />
-							<label for="hide-2" class="label">Name</label>
-							<div class="block-hide names">
-								<div class="checkbox">
-									<input id="radio1" type="radio" name="radio" value="radio1">
-									<label for="radio1">Lego</label>
-									<input id="radio2" type="radio" name="radio" value="radio2">
-									<label for="radio2">Lego</label>
-									<input id="radio3" type="radio" name="radio" value="radio3">
-									<label for="radio3">Lego</label>
-									<input id="radio4" type="radio" name="radio" value="radio4">
-									<label for="radio4">Lego</label>
-									<input id="radio5" type="radio" name="radio" value="radio5">
-									<label for="radio5">Lego</label>
-								</div>
-							</div>
-						</div>
-						<div id="show-hide">
-							<input title=".." id="hide-3" name="hide-3" type="checkbox" />
-							<label for="hide-3" class="label">Name</label>
-							<div class="block-hide lists">
-								<div id="list-show-hide">
-									<div>
-										<input title=".." id="list-hide" name="list-hide" type="checkbox" />
-										<label for="list-hide">Выпадающий список</label>
-										<div class="list">
-											<a href="">Выпадающий список</a>
-											<a href="">Выпадающий список</a>
-											<a href="">Выпадающий список</a>
+						<div id="filter-show-hide">
+							<div>
+								<input title="..." id="filter-hide" name="filter-hide" type="checkbox" />
+								<label title="...." for="filter-hide">Фильтр <img class="filter-img-1" src="img/filter.png" alt=""><img class="filter-img-2" src="img/filter-2.png" alt=""></label>
+								<div class="filter">
+									<div id="show-hide">
+										<input title=".." id="hide" name="hide" type="checkbox" />
+										<label for="hide" class="label">Цена</label>
+										<div class="block-hide">
+											<div class="slider">
+												<p>
+													<input type="text" id="amount" placeholder="от">
+													<input type="text" id="amount_1" placeholder="до">
+												</p>
+												<div id="slider-range"></div>
+												<p class="close-slider"><a href=""><img src="img/close-slider.png" alt=""><span>Сбросить фильтр</span></a></p>
+											</div>
+										</div>
+									</div>
+									<div id="show-hide">
+										<input title=".." id="hide-1" name="hide-1" type="checkbox" />
+										<label for="hide-1" class="label">Бренды</label>
+										<div class="block-hide brands">
+											<div class="checkbox">
+												<input id="check1" type="checkbox" name="check" value="check1">
+												<label for="check1">Lego</label>
+												<input id="check2" type="checkbox" name="check" value="check2">
+												<label for="check2">Brand 1</label>
+												<input id="check3" type="checkbox" name="check" value="check3">
+												<label for="check3">Brand 1</label>
+												<input id="check4" type="checkbox" name="check" value="check4">
+												<label for="check4">Brand 1</label>
+												<input id="check5" type="checkbox" name="check" value="check5">
+												<label for="check5">Brand 1</label>
+											</div>
+										</div>
+									</div>
+									<div id="show-hide">
+										<input title=".." id="hide-2" name="hide-2" type="checkbox" />
+										<label for="hide-2" class="label">Name</label>
+										<div class="block-hide names">
+											<div class="checkbox">
+												<input id="radio1" type="radio" name="radio" value="radio1">
+												<label for="radio1">Lego</label>
+												<input id="radio2" type="radio" name="radio" value="radio2">
+												<label for="radio2">Lego</label>
+												<input id="radio3" type="radio" name="radio" value="radio3">
+												<label for="radio3">Lego</label>
+												<input id="radio4" type="radio" name="radio" value="radio4">
+												<label for="radio4">Lego</label>
+												<input id="radio5" type="radio" name="radio" value="radio5">
+												<label for="radio5">Lego</label>
+											</div>
+										</div>
+									</div>
+									<div id="show-hide">
+										<input title=".." id="hide-3" name="hide-3" type="checkbox" />
+										<label for="hide-3" class="label">Name</label>
+										<div class="block-hide lists">
+											<div id="list-show-hide">
+												<div>
+													<input title=".." id="list-hide" name="list-hide" type="checkbox" />
+													<label for="list-hide">Выпадающий список</label>
+													<div class="list">
+														<a href="">Выпадающий список</a>
+														<a href="">Выпадающий список</a>
+														<a href="">Выпадающий список</a>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -211,28 +233,32 @@
 					</div>
 					<div class="right-sidebar">
 						<div class="sort">
-							<p>Сортировать по:</p>
-							<form action="/" method="post">
-								<select name="" id="sort-1">
-									<option value="">Популярности</option>
-									<option value="">От дешевых к дорогим</option>
-									<option value="">От дорогих к дешевым</option>
-									<option value="">По рейтингу</option>
-									<option value="">Новинки</option>
-									<option value="">Акционные</option>
-								</select>
-							</form>
-							<p>Показывать по:</p>
-							<form action="/" method="post">
-								<select name="" id="sort-2">
-									<option value="">15</option>
-									<option value="">20</option>
-									<option value="">25</option>
-									<option value="">30</option>
-									<option value="">40</option>
-									<option value="">50</option>
-								</select>
-							</form>
+							<div>
+								<p>Сортировать по:</p>
+								<form action="/" method="post">
+									<select name="" id="sort-1">
+										<option value="">Популярности</option>
+										<option value="">От дешевых к дорогим</option>
+										<option value="">От дорогих к дешевым</option>
+										<option value="">По рейтингу</option>
+										<option value="">Новинки</option>
+										<option value="">Акционные</option>
+									</select>
+								</form>
+							</div>
+							<div>
+								<p>Показывать по:</p>
+								<form action="/" method="post">
+									<select name="" id="sort-2">
+										<option value="">15</option>
+										<option value="">20</option>
+										<option value="">25</option>
+										<option value="">30</option>
+										<option value="">40</option>
+										<option value="">50</option>
+									</select>
+								</form>
+							</div>
 						</div>
 						<div class="product-list">
 							<div class="product">
@@ -589,147 +615,145 @@
 							</div>
 						</div>
 						<div class="flipping">
-						<a href="">1</a>
-						<a href="">2</a>
-						<a href="">3</a>
-						<a href="">4</a>
-						<a href="">5</a>
-						<a href="">...</a>
+							<a href="">1</a>
+							<a href="">2</a>
+							<a href="">3</a>
+							<a href="">4</a>
+							<a href="">5</a>
+							<a href="">...</a>
+						</div>
 					</div>
+				</div>
+				<div class="product-categories">
+					<p class="headline">Другие категории товаров</p>
+					<div class="categories">
+						<a href="#">
+							<div>
+								<img src="img/categories-toy-1.png" alt="">
+								<p>Для самых маленьких</p>
+							</div>
+						</a>
+						<a href="#">
+							<div>
+								<img src="img/categories-toy-2.png" alt="">
+								<p>Для мальчиков</p>
+							</div>
+						</a>
+						<a href="#">
+							<div>
+								<img src="img/categories-toy-3.png" alt="">
+								<p>Для девочек</p>
+							</div>
+						</a>
+						<a href="#">
+							<div>
+								<img src="img/categories-toy-4.png" alt="">
+								<p>Развивающие</p>
+							</div>
+						</a>
+						<a href="#">
+							<div>
+								<img src="img/categories-toy-5.png" alt="">
+								<p>Логические</p>
+							</div>
+						</a>
+						<a href="#">
+							<div>
+								<img src="img/categories-toy-6.png" alt="">
+								<p>Конструкторы</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="updates-form">
+					<div>
+						<img src="img/logo.png" alt="">
+					</div>
+					<div>
+						<p>Подписывайтесь на обновления</p>
+						<form action="" method="get">
+							<input name="email" placeholder="Ваш E-mail" type="email">
+							<button type="submit" class="button-2"><span>Подписаться</span></button>
+						</form>
 					</div>
 				</div>
 			</div>
-			<div class="product-categories">
-				<p class="headline">Другие категории товаров</p>
-				<div class="categories">
-					<a href="#">
-						<div>
-							<img src="img/categories-toy-1.png" alt="">
-							<p>Для самых маленьких</p>
-						</div>
-					</a>
-					<a href="#">
-						<div>
-							<img src="img/categories-toy-2.png" alt="">
-							<p>Для мальчиков</p>
-						</div>
-					</a>
-					<a href="#">
-						<div>
-							<img src="img/categories-toy-3.png" alt="">
-							<p>Для девочек</p>
-						</div>
-					</a>
-					<a href="#">
-						<div>
-							<img src="img/categories-toy-4.png" alt="">
-							<p>Развивающие</p>
-						</div>
-					</a>
-					<a href="#">
-						<div>
-							<img src="img/categories-toy-5.png" alt="">
-							<p>Логические</p>
-						</div>
-					</a>
-					<a href="#">
-						<div>
-							<img src="img/categories-toy-6.png" alt="">
-							<p>Конструкторы</p>
-						</div>
-					</a>
+			<footer>
+				<div class="footer">
+					<div class="logo-footer">
+						<img src="img/logo.png" alt="">
+						<p>© 2018 – Все права защищены</p>
+					</div										Б/вшмЮ
+					>
+					<ul>
+						<li>Меню</li>
+						<a href="">
+							<li>Акции</li>
+						</a>
+						<a href="">
+							<li>Доставка и самовывоз</li>
+						</a>
+						<a href="">
+							<li>Оплата</li>
+						</a>
+						<a href="">
+							<li>Гарантии качества</li>
+						</a>
+						<a href="">
+							<li>О компании</li>
+						</a>
+						<a href="">
+							<li>Контакты</li>
+						</a>
+					</ul>
+					<ul>
+						<li>Каталог</li>
+						<a href="">
+							<li>Для самых маленьких</li>
+						</a>
+						<a href="">
+							<li>Для мальчиков</li>
+						</a>
+						<a href="">
+							<li>Для девочек</li>
+						</a>
+						<a href="">
+							<li>Развивающие</li>
+						</a>
+						<a href="">
+							<li>Логические</li>
+						</a>
+						<a href="">
+							<li>Конструкторы</li>
+						</a>
+					</ul>
+					<ul>
+						<li>Контакты</li>
+						<li class="oclock-2"><img src="img/oclock-green.png" alt="">Пн-Пт с 10:00 до 20:00 </li>
+						<a href="tel:+79566373333">
+							<li><img src="img/phone-green.png" alt="">+ 7 (956) 637 33 33</li>
+						</a>
+						<a href="">
+							<li><img src="img/mail-green.png" alt=""><span>info@planeta-igrushek.ru</span></li>
+						</a>
+					</ul>
 				</div>
-			</div>
-			<div class="updates-form">
-				<div>
-					<img src="img/logo.png" alt="">
-				</div>
-				<div>
-					<p>Подписывайтесь на обновления</p>
-					<form action="" method="get">
-						<input name="email" placeholder="Ваш E-mail" type="email">
-						<button type="submit" class="button-2"><span>Подписаться</span></button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<footer>
-		<div class="footer">
-			<div class="logo-footer">
-				<img src="img/logo.png" alt="">
-				<p>© 2018 – Все права защищены</p>
-			</div										Б/вшмЮ
-			>
-			<ul>
-				<li>Меню</li>
-				<a href="">
-					<li>Акции</li>
-				</a>
-				<a href="">
-					<li>Доставка и самовывоз</li>
-				</a>
-				<a href="">
-					<li>Оплата</li>
-				</a>
-				<a href="">
-					<li>Гарантии качества</li>
-				</a>
-				<a href="">
-					<li>О компании</li>
-				</a>
-				<a href="">
-					<li>Контакты</li>
-				</a>
-			</ul>
-			<ul>
-				<li>Каталог</li>
-				<a href="">
-					<li>Для самых маленьких</li>
-				</a>
-				<a href="">
-					<li>Для мальчиков</li>
-				</a>
-				<a href="">
-					<li>Для девочек</li>
-				</a>
-				<a href="">
-					<li>Развивающие</li>
-				</a>
-				<a href="">
-					<li>Логические</li>
-				</a>
-				<a href="">
-					<li>Конструкторы</li>
-				</a>
-			</ul>
-			<ul>
-				<li>Контакты</li>
-				<li class="oclock-2"><img src="img/oclock-green.png" alt="">Пн-Пт с 10:00 до 20:00 </li>
-				<a href="tel:+79566373333">
-					<li><img src="img/phone-green.png" alt="">+ 7 (956) 637 33 33</li>
-				</a>
-				<a href="">
-					<li><img src="img/mail-green.png" alt=""><span>info@planeta-igrushek.ru</span></li>
-				</a>
-			</ul>
-		</div>
-	</footer>
-	<script>
-	$( function() {
-	$( "#slider-range" ).slider({
-	range: true,
-	min: 0,
-	max: 9999,
-	values: [ 0, 10000 ],
-	slide: function( event, ui ) {
-	$( "#amount" ).val( "" + ui.values[ 0 ]);
-	$( "#amount_1" ).val( "" + ui.values[ 1 ]);
-	}
-	});
-	$( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", от ) );
-	$( "#amount_1" ).val( "" + $( "#slider-range" ).slider( "values", до ) );
-	} );
-	</script>
-</body>
-</html>
+			</footer>
+			<script>
+			$( function() {
+			$( "#slider-range" ).slider({
+			range: true,
+			min: 0,
+			max: 9999,
+			values: [ 0, 10000 ],
+			slide: function( event, ui ) {
+			$( "#amount" ).val( "" + ui.values[ 0 ]);
+			$( "#amount_1" ).val( "" + ui.values[ 1 ]);
+			}
+			});
+			$( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", от ) );
+			$( "#amount_1" ).val( "" + $( "#slider-range" ).slider( "values", до ) );
+			} );
+			</script>
+		</body>
+	</html>

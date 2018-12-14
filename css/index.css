@@ -249,9 +249,12 @@ header {
 }
 
 .dws-menu .dropmenu {
+  display: flex;
+  align-items: stretch;
+  line-height: 2.5;
   position: relative;
-  width: 139px;
-  padding: 0 0 0 42px;
+  width: 120px;
+  padding: 0 0 0 55px;
   margin: 0 50px 0 0;
   background: #ff6703;
   letter-spacing: 1.8px;
@@ -2500,6 +2503,7 @@ footer {
   .dws-menu .dropmenu {
     margin: 0 0 0 auto;
     width: 20%;
+    font-size: 15px;
   }
   .dws-menu .dropmenu img {
     top: 24%;
@@ -2976,7 +2980,7 @@ footer {
     text-align: center;
   }
   .logo-footer img {
-    width: 250px;
+    width: 100%;
     display: block;
     margin: 0 auto;
   }
@@ -3082,8 +3086,11 @@ footer {
     left: -270px;
   }
   .dws-menu .dropmenu {
-    width: 18%;
+    width: 20%;
     padding-left: 30px;
+    padding-right: 5px;
+    font-size: 3.5vw;
+    line-height: 3.5;
   }
   .dws-menu .dropmenu img {
     width: 12px;
@@ -3253,6 +3260,20 @@ footer {
     color: #4991e8;
     font-size: 15px;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .btn-menu {
+    top: 0.5vh;
+    left: 4%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .btn-menu {
+    top: 0vh;
+    left: 4%;
   }
 }
 

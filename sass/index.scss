@@ -41,7 +41,7 @@ header { width: auto; margin: 0 auto; font-family: MuseoSansCyrl_500; font-size:
 .dws-menu > ul li{ position: relative; }
 .dws-menu > ul li a{ display: block; margin: 0 10px 0 0; padding: 11px 20px 8px 18px; border-bottom: 4px solid transparent; font-size: 14px; font-family: MuseoSansCyrl_500; font-size: 18px; color: white; text-decoration: none; transition: all 0.3s ease;}
 .dws-menu li a:hover{	border-bottom: 4px solid rgb(255, 103, 3); transition: all 0.3s ease;}
-.dws-menu .dropmenu { position: relative; width: 139px; padding: 0 0 0 42px; margin:0 50px 0 0; background: rgb(255, 103, 3); letter-spacing: 1.8px; }
+.dws-menu .dropmenu { display: flex;align-items: stretch; line-height: 2.5; position: relative; width: 120px; padding: 0 0 0 55px; margin:0 50px 0 0; background: rgb(255, 103, 3); letter-spacing: 1.8px; }
 .dws-menu .dropmenu img { position: absolute; top: 13px; left: 23px; }
 /*sub menu*/
 .dws-menu li ul{ z-index: 99999; position: absolute; width: 240px; left: 0px; display: none; padding: 30px 0 35px 40px; background: white;}
@@ -633,7 +633,7 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.header-info-centre form input { height: 25px; }
 	.dws-menu { width: 100%; flex-direction: row-reverse;}
 	.dws-menu .li-none { display: none; }
-	.dws-menu .dropmenu{ margin: 0 0 0 auto; width: 20%;}
+	.dws-menu .dropmenu{ margin: 0 0 0 auto; width: 20%; font-size: 15px;}
 	.dws-menu .dropmenu img { top: 24%; left: 10%; }
 	.dws-menu li ul { left: -100px; }
 	.dws-menu > ul li a { font-size: 2.4vw; padding: 11px 20px 8px 5px; }
@@ -755,7 +755,7 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.updates-form form .button-2::before { display: block; content: url(../img/mail.png) ; }
 	.updates-form form .button-2 span { display: none; }	
 	.footer { width: 94%; margin: 0 3% 0 3%; padding: 2% 0 0 0; display: inline-block; text-align: center;}
-	.logo-footer img { width: 250px; display: block; margin: 0 auto;}
+	.logo-footer img { width: 100%; display: block; margin: 0 auto;}
 	.logo-footer p {    font-size: 2.3vw; margin: 2% auto; text-align: center;}
 	.footer ul a li { font-size: 2.85vw; }
 	.footer ul:nth-of-type(3) .oclock-2 { font-size: 2.85vw; margin: 2% auto; text-align: left;}
@@ -783,7 +783,7 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.hidden-menu-ticker:checked ~ .btn-menu { top: 2%; }
 	.hidden-menu-ticker:checked ~ .btn-menu span.third { top:-2px; }
 	.hidden-menu { z-index: 10000; width: 60%; height: 80%; font-size: 3vw; left: -270px; }
-	.dws-menu .dropmenu { width: 18%; padding-left: 30px; }
+	.dws-menu .dropmenu { width: 20%; padding-left: 30px; padding-right: 5px; font-size: 3.5vw; line-height: 3.5;}
 	.dws-menu .dropmenu img { width: 12px; top: 30%;}
 	.dws-menu li ul { left: -82px; }
 	.dws-menu li ul { width: 130px; padding: 15px 0 15px 15px ; }
@@ -837,6 +837,12 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.text-show-hide input[type="checkbox"] { display: none;}
 	.text-show-hide input[type="checkbox"]:checked + .xpandable-block { height: auto;}
 	.text-show-hide label { order: 1; color: #4991e8; font-size: 15px; cursor: pointer;}
+}
+@media only screen and (max-width:350px){
+	.btn-menu { top: 0.5vh; left: 4%;}
+}
+@media only screen and (max-width:350px){
+	.btn-menu { top: 0vh; left: 4%;}
 }
 @media only screen and (max-width:385px){
 	.xpandable-block { height: 100px;}

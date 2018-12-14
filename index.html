@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="font/font.css">
 		<link rel="stylesheet" href="css/style-modal.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/basket.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;">
 		<title>Planet Toys</title>
 	</head>
@@ -63,10 +64,23 @@
 						<img src="img/profile.png" alt="profile">
 					</a>
 					<p>Личный кабинет <span>Константин</span></p>
-					<a href="">
-						<img src="img/shop-bag.png" alt="shop-bag">
-						<p>2</p>
-					</a>
+					<div class="container-basket">
+						<div>
+							<a href="#bask2" class="button-bask"><img src="img/shop-bag.png" alt=""><p>2</p></a>
+						</div>
+						<!-- Модальное окно 1 -->
+						<a href="#x" class="overlay-bask" id="bask2"></a>
+						<div class="popup-bask">
+							<div class="basket">
+								<p>Ваш товар добавлен в корзину</p>
+								<div>
+									<a href="#">Продолжить покупки</a>
+									<a href="#">Перейти в корзину</a>
+								</div>
+							</div>
+							<a class="close-bask" title="Закрыть" href="#close"></a>
+						</div>
+					</div>
 					<p>Всего <span>1 125 руб.</span></p>
 				</div>
 				<div class="search-2">
@@ -95,7 +109,7 @@
 		<div class="header-nav">
 			<nav class="dws-menu">
 				<ul>
-					<li class="dropmenu"><a href="#"><img src="img/grid.png" alt="grid">КАТАЛОГ</a>
+					<li class="dropmenu"><img src="img/grid.png" alt="grid">КАТАЛОГ
 					<ul>
 						<li><a href="#">Машинки</a></li>
 						<li><a href="#">КУКЛЫ</a></li>
