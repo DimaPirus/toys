@@ -751,20 +751,22 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.updates-form div:nth-of-type(2) p { font-size: 4vw; margin: 5% auto 5% auto ; text-align: center;  }
 	.updates-form div:nth-of-type(2) input { width: 50%; height: 35px; padding-left: 5%;}
 	.updates-form form { text-align: center; }
-	.updates-form form .button-2 { width: 20%; margin: 0; position: relative; top: -5px; font-size: 1.5vw; height: 35px;}
-	.footer { width: 94%; margin: 0 3% 0 3%; padding: 2% 0 0 0; display: inline-block;}
+	.updates-form form .button-2 { width: 10%; min-width: 40px; margin: 0; position: relative; top: -1px; font-size: 1.5vw; height: 35px;}
+	.updates-form form .button-2::before { display: block; content: url(../img/mail.png) ; }
+	.updates-form form .button-2 span { display: none; }	
+	.footer { width: 94%; margin: 0 3% 0 3%; padding: 2% 0 0 0; display: inline-block; text-align: center;}
 	.logo-footer img { width: 250px; display: block; margin: 0 auto;}
 	.logo-footer p {    font-size: 2.3vw; margin: 2% auto; text-align: center;}
 	.footer ul a li { font-size: 2.85vw; }
-	.footer ul:nth-of-type(3) .oclock-2 { font-size: 2.85vw; margin: 2% auto; text-align: center;}
+	.footer ul:nth-of-type(3) .oclock-2 { font-size: 2.85vw; margin: 2% auto; text-align: left;}
 	.footer ul li { font-size: 3.5vw; }
 	.footer ul:nth-of-type(1) { float: left; margin-left: 8%; }
 	.footer ul:nth-of-type(2) { float: right; margin-right: 8%; margin-left: 0;}
 	.footer ul:nth-of-type(1) { text-align: center; }
 	.footer ul:nth-of-type(2) { text-align: center; }
-	.footer ul:nth-of-type(3) { display: inline-block; width: 100%; margin: 3% 0 0 0; flex-wrap: wrap; }
-	.footer ul:nth-of-type(3) li:nth-of-type(1) { width: 100%; text-align: center;}
-	.footer ul:nth-of-type(3) a { margin: 2% auto; }
+	.footer ul:nth-of-type(3) { display: inline-block; width: auto; margin: 3% 0 0 0; flex-wrap: wrap; }
+	.footer ul:nth-of-type(3) li { width: 100%; text-align: center;}
+	.footer ul:nth-of-type(3) a li { text-align: left; }
 }
 
 @media only screen and (max-width:450px){
