@@ -417,6 +417,8 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.categories { margin: 0 auto; }
 	.categories a { width: 30%; margin-right: 5%; }
 	.categories a div { width: 100%; }
+	.categories a:hover div {  }
+	.categories a:hover div { width: 100%; border: 1px solid rgb(200, 200, 200); }
 	.toy-brands { width: auto; max-width: 1170px; }
 	.toy-brands .page {margin-right: 10px; }
 	.toy-brands a:nth-of-type(1) .page img, .toy-brands a:nth-of-type(7) .page img { margin: 11px 0 0 0px; }
@@ -499,7 +501,7 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.btn-menu { color: #fff; background: transparent; padding: 5px; position: absolute; top: 115px; left: 5px; cursor: pointer; transition: left .23s; z-index: 3; width: 25px; -webkit-transform: translateZ(0); -webkit-backface-visibility: hidden;}
 	.btn-menu span { display: block; height: 5px; background-color: #ff6703; margin: 5px 0 0; transition: all .1s linear .23s; position: relative;}
 	.btn-menu span.first { margin-top: 0;}
-	.hidden-menu-ticker:checked ~ .btn-menu { left: 214px; top: 0.5%;}
+	.hidden-menu-ticker:checked ~ .btn-menu { left: 214px; top: 0.5%; position: fixed;}
 	.hidden-menu-ticker:checked ~ .hidden-menu { left: 0;}
 	.hidden-menu-ticker:checked ~ .btn-menu span.first { -webkit-transform: rotate(45deg); top: 10px;}
 	.hidden-menu-ticker:checked ~ .btn-menu span.second { opacity: 0;}
@@ -667,7 +669,7 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.btn-menu { color: #fff; background: transparent; padding: 5px; position: absolute; top: 93px; left: 5px; cursor: pointer; transition: left .23s; z-index: 3; width: 25px; -webkit-transform: translateZ(0); -webkit-backface-visibility: hidden;}
 	.btn-menu span { display: block; height: 5px; background-color: #ff6703; margin: 5px 0 0; transition: all .1s linear .23s; position: relative;}
 	.btn-menu span.first { margin-top: 0;}
-	.hidden-menu-ticker:checked ~ .btn-menu { left: 214px; top: 0.5%;}
+	.hidden-menu-ticker:checked ~ .btn-menu { left: 214px; top: 0.5%; position: fixed;}
 	.hidden-menu-ticker:checked ~ .hidden-menu { left: 0;}
 	.hidden-menu-ticker:checked ~ .btn-menu span.first { -webkit-transform: rotate(45deg); top: 10px;}
 	.hidden-menu-ticker:checked ~ .btn-menu span.second { opacity: 0;}

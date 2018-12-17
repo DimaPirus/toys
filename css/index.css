@@ -1794,6 +1794,10 @@ footer {
   .categories a div {
     width: 100%;
   }
+  .categories a:hover div {
+    width: 100%;
+    border: 1px solid #c8c8c8;
+  }
   .toy-brands {
     width: auto;
     max-width: 1170px;
@@ -2103,6 +2107,7 @@ footer {
   .hidden-menu-ticker:checked ~ .btn-menu {
     left: 214px;
     top: 0.5%;
+    position: fixed;
   }
   .hidden-menu-ticker:checked ~ .hidden-menu {
     left: 0;
@@ -2714,6 +2719,7 @@ footer {
   .hidden-menu-ticker:checked ~ .btn-menu {
     left: 214px;
     top: 0.5%;
+    position: fixed;
   }
   .hidden-menu-ticker:checked ~ .hidden-menu {
     left: 0;
