@@ -20,6 +20,7 @@ header { width: auto; margin: 0 auto; font-family: MuseoSansCyrl_500; font-size:
 .header-info-centre form input { width: 337px; height: 35px; padding: 0 0 0 56px; border-radius: 5px 0px 0px 5px; box-shadow: 0px 8px 10px 0 rgba(0, 0, 0, 0.15); border: solid 1px rgb(235, 235, 235); background-color: rgb(255, 255, 255); font-size: 18px; color: rgb(0, 0, 0);  font-family: MuseoSansCyrl_300; font-style: italic;}
 .header-info-centre form .button-1 { position: absolute;  top: 0; right: -112px; width: 112px; height: 35px; border: none; box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.1); background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(252, 157, 13)); border-radius: 0 5px 5px 0; cursor: pointer; font-family: MuseoSansCyrl_500; font-size: 18px; color: white;}
 .header-info-centre form .button-2 { width: 15px; height: 15px; position: absolute; top: 10px; left: 19px; border: none; background: transparent; background-image: url(../img/search.png) ; cursor: pointer; }
+.header-info-centre form .button-1:hover { background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(255, 111, 4)); }
 .header-info-centre .search-2 { display: none; }
 /*placeholder*/
 .header-info-centre form input::-webkit-input-placeholder { font-size: 18px; color: rgb(194, 194, 194);  font-family: MuseoSansCyrl_300; font-style: italic; }
@@ -119,6 +120,7 @@ header { width: auto; margin: 0 auto; font-family: MuseoSansCyrl_500; font-size:
 .price-amount .toy-price span { display: block; font-size: 32px; color: rgb(59, 57, 75); }
 .price-amount .toy-price-2 { top: 30px; left: 238px; }
 .price-amount .button-bask { position: absolute; top: 119px; left: 35px; width: 149px; height: 50px; box-shadow: 0px 2px 0 0 rgb(224, 103, 12); background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(252, 157, 13)); font-family: MuseoSansCyrl_700; font-weight: bold; font-size: 18px;  letter-spacing: 0.5px; color: white; border-radius: 5px; }
+.price-amount .button-bask:hover { box-shadow: 0px 2px 0 0 rgb(224, 103, 12); background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(255, 111, 4)); }
 .price-amount .button-bask p { line-height: 2.8; text-align: center; }
 .buy-one-clik { position: absolute; top: 119px; left: 205px; display: block; width: 200px; height: 48px; font-family: MuseoSansCyrl_700; font-weight: bold; font-size: 18px; line-height: 2.8; text-align: center; letter-spacing: 0.5px; color: rgb(86, 83, 112);  border-radius: 5px; border: solid 2px rgb(255, 103, 3) }
 .order { position: absolute; top: 38px; right: 38px; }
@@ -179,6 +181,7 @@ section{width:115px;float: left;}
 .similar-goods .product .price-popular-toy .old-price::before { position: absolute; top:12px; left: 0px; display: block; content: " "; width: 86px; height: 1px; background-color: rgb(0, 154, 226);}
 .similar-goods .product .price-popular-toy .new-price { margin: 13px 20px 0 auto; font-family: ProximaNovaRegular; font-size: 24px; color: black; font-weight: bold; }
 .similar-goods .product .button-bask { display: flex; padding: 12px 0 8px 0; border-radius: 0px 0px 10px 10px; font-family: ProximaNovaRegular; font-size: 16px; color: white; box-shadow: 0px 2px 0 0 rgb(224, 103, 12); background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(252, 157, 13)); }
+.similar-goods .product .button-bask:hover { box-shadow: 0px 2px 0 0 rgb(224, 103, 12); background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(255, 111, 4)); }
 .similar-goods .product .button-bask img { position: relative; margin:0 8px 0 35px; top: -3px; width: 21px; height: 19px; }
 .product-still input, .product-still label { display: none; }
 .product-still .similar-goods-still { display: flex; justify-content: space-between; }
@@ -195,7 +198,7 @@ section{width:115px;float: left;}
 .updates-form form input:-moz-placeholder {font-size: 16px; color: rgb(194, 194, 194);  font-family: MuseoSansCyrl_300; }
 .updates-form form input:-ms-input-placeholder {font-size: 16px; color: rgb(194, 194, 194);  font-family: MuseoSansCyrl_300; }
 .updates-form form .button-2 {width: 177px; height: 50px; margin: 0 0 0 31px; border: none; border-radius: 5px; box-shadow: 0px 2px 0 0 rgb(211, 101, 17); background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(252, 157, 13)); font-family: MuseoSansCyrl_900; font-size: 18px; letter-spacing: 0.5px; color: white; cursor: pointer;}
-
+.updates-form form .button-2:hover { background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(255, 111, 4)); }
 /*footer*/
 footer { width: auto; background-color: rgb(61, 63, 87); }
 .footer { display: flex; width: 1180px; margin: 0 auto; padding: 58px 0 42px 15px;}

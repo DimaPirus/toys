@@ -119,6 +119,10 @@ header {
   color: white;
 }
 
+.header-info-centre form .button-1:hover {
+  background-image: linear-gradient(9deg, #ff6703, #ff6f04);
+}
+
 .header-info-centre form .button-2 {
   width: 15px;
   height: 15px;
@@ -1008,6 +1012,10 @@ header {
   background-image: linear-gradient(9deg, #ff6703, #fc9d0d);
 }
 
+.product-list .product .button-bask:hover {
+  background-image: linear-gradient(9deg, #ff6703, #ff6f04);
+}
+
 .product-list .product .button-bask img {
   position: relative;
   margin: 0 8px 0 35px;
@@ -1075,10 +1083,10 @@ header {
 }
 
 .categories div {
-  width: 361px;
-  height: 195px;
+  width: 359px;
+  height: 193px;
   border-radius: 10px;
-  border: solid 1px #ebebeb;
+  border: solid 2px #ebebeb;
   background-color: white;
 }
 
@@ -1087,8 +1095,6 @@ header {
 }
 
 .categories a:hover div {
-  width: auto;
-  height: 100%;
   border: 2px solid #fc9c0d;
 }
 
@@ -1205,6 +1211,11 @@ header {
   letter-spacing: 0.5px;
   color: white;
   cursor: pointer;
+}
+
+.updates-form form .button-2:hover {
+  box-shadow: 0px 2px 0 0 #e0670c;
+  background-image: linear-gradient(9deg, #ff6703, #ff6f04);
 }
 
 /*footer*/
@@ -1475,6 +1486,10 @@ footer {
   }
   .categories a div {
     width: 100%;
+  }
+  .categories a:hover div {
+    width: 100%;
+    height: 100%;
   }
   .updates-form {
     width: auto;
@@ -2118,6 +2133,10 @@ footer {
   .product-categories {
     width: 100%;
     margin: 0 auto 10% auto;
+  }
+  .content-overflow .categories a:hover div {
+    width: 100%;
+    height: 105%;
   }
   .categories a {
     width: 31.3%;

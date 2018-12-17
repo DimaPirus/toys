@@ -19,6 +19,7 @@ header { width: auto; margin: 0 auto; font-family: MuseoSansCyrl_500; font-size:
 .header-info-centre form { position: relative; margin: 17px 0 0 18px;}
 .header-info-centre form input { width: 337px; height: 35px; padding: 0 0 0 56px; border-radius: 5px 0px 0px 5px; box-shadow: 0px 8px 10px 0 rgba(0, 0, 0, 0.15); border: solid 1px rgb(235, 235, 235); background-color: rgb(255, 255, 255); font-size: 18px; color: rgb(0, 0, 0);  font-family: MuseoSansCyrl_300; font-style: italic;}
 .header-info-centre form .button-1 { position: absolute;  top: 0; right: -112px; width: 112px; height: 35px; border: none; box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.1); background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(252, 157, 13)); border-radius: 0 5px 5px 0; cursor: pointer; font-family: MuseoSansCyrl_500; font-size: 18px; color: white;}
+.header-info-centre form .button-1:hover { background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(255, 111, 4)); }
 .header-info-centre form .button-2 { width: 15px; height: 15px; position: absolute; top: 10px; left: 19px; border: none; background: transparent; background-image: url(../img/search.png) ; cursor: pointer; }
 .header-info-centre .search-2 { display: none; }
 /*placeholder*/
@@ -160,6 +161,7 @@ header { width: auto; margin: 0 auto; font-family: MuseoSansCyrl_500; font-size:
 .product-list .product .price-popular-toy .old-price::before { position: absolute; top:9px; left: 0px; display: block; content: " "; width: 73px; height: 1px; background-color: rgb(0, 154, 226);}
 .product-list .product .price-popular-toy .new-price { margin: 13px 0 0 23px; font-family: ProximaNovaRegular; font-size: 20.5px; color: black; font-weight: bold; }
 .product-list .product .button-bask { display: flex; padding: 9px 0 0px 0; border-radius: 0px 0px 10px 10px; font-family: ProximaNovaRegular; font-size: 13.5px; color: white; box-shadow: 0px 2px 0 0 rgb(224, 103, 12); background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(252, 157, 13)); }
+.product-list .product .button-bask:hover { background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(255, 111, 4)); }
 .product-list .product .button-bask img { position: relative; margin:0 8px 0 35px; top: -3px; width: 21px; height: 19px; }
 /*стилизация блока перелистывания страниц*/
 .flipping { display: flex; justify-content: center; margin-top: 42px; }
@@ -173,9 +175,9 @@ header { width: auto; margin: 0 auto; font-family: MuseoSansCyrl_500; font-size:
 /*стилизация блока с категориями*/
 .product-categories { width: 1150px; margin: 0 auto 83px auto; }
 .categories { display: flex; flex-wrap: wrap;}
-.categories div { width: 361px; height: 195px; border-radius: 10px; border: solid 1px rgb(235, 235, 235); background-color: rgb(255, 255, 255);}
+.categories div { width: 359px; height: 193px; border-radius: 10px; border: solid 2px rgb(235, 235, 235); background-color: rgb(255, 255, 255);}
 .categories a { margin: 0 30px 0 0; }
-.categories a:hover div {width: auto; height: 100%; border: 2px solid rgb(252, 156, 13); }
+.categories a:hover div { border: 2px solid rgb(252, 156, 13); }
 .categories a:nth-of-type(3n) { margin: 0; }
 .categories a:nth-of-type(-n+3) { margin-bottom: 28px; }
 .categories div img { display: block; margin: 36px auto 0 auto; }
@@ -197,7 +199,7 @@ header { width: auto; margin: 0 auto; font-family: MuseoSansCyrl_500; font-size:
 .updates-form form input:-moz-placeholder {font-size: 16px; color: rgb(194, 194, 194);  font-family: MuseoSansCyrl_300; }
 .updates-form form input:-ms-input-placeholder {font-size: 16px; color: rgb(194, 194, 194);  font-family: MuseoSansCyrl_300; }
 .updates-form form .button-2 {width: 177px; height: 50px; margin: 0 0 0 31px; border: none; border-radius: 5px; box-shadow: 0px 2px 0 0 rgb(211, 101, 17); background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(252, 157, 13)); font-family: MuseoSansCyrl_900; font-size: 18px; letter-spacing: 0.5px; color: white; cursor: pointer;}
-
+.updates-form form .button-2:hover { box-shadow: 0px 2px 0 0 rgb(224, 103, 12); background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(255, 111, 4)); }
 /*footer*/
 footer { width: auto; background-color: rgb(61, 63, 87); }
 .footer { display: flex; width: 1180px; margin: 0 auto; padding: 58px 0 42px 15px;}
@@ -277,6 +279,7 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.categories { margin: 0 auto; }
 	.categories a { width: 30%; margin-right: 5%; }
 	.categories a div { width: 100%; }
+	.categories a:hover div{ width: 100%; height: 100%; }
 	.updates-form { width: auto; max-width: 1268px; margin: 0 5px 60px 5px; }
 	.updates-form div:nth-of-type(1) { width: 37%; }
 	.updates-form div:nth-of-type(1) img { width: 100%; }
@@ -433,6 +436,7 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.content-nav p { font-size: 2.65vw; }
 	.headline { width: 100%; font-size: 5.3vw; margin: 0 auto 5% auto}
 	.product-categories { width: 100%; margin: 0 auto 10% auto; }
+	.content-overflow .categories a:hover div{ width: 100%; height: 105%; }
 	.categories a { width: 31.3%;margin-right: 3%; }
 	.categories a div { width: 100%; height: 105%; }	
 	.categories a:nth-of-type(1) div img { width: 30%; margin-top: 10%; }
