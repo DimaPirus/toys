@@ -97,6 +97,7 @@ header { width: auto; margin: 0 auto; font-family: MuseoSansCyrl_500; font-size:
 .toys-stock-2 div:nth-of-type(2) img { margin: 2px 0 0 -23px; }
 .toys-stock-2 div p { padding: 15px 0 0 27px; font-family: MuseoSansCyrl_500; font-size: 15px; letter-spacing: 0.2px; color: white; }
 .toys-stock-2 .toy-button-2 { position: absolute; top: 149px; left: 154px; display: block; width: 90px; height: 22px; padding: 8px 0 0 0; border-radius: 5px; box-shadow: 0px 2px 0 0 rgb(224, 103, 12); background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(252, 157, 13)); font-family: MuseoSansCyrl_500; font-size: 15px; letter-spacing: 0.2px; text-align: center; color: white; }
+.toys-stock-2 .toy-button-2:hover { box-shadow: 0px 2px 0 0 rgb(224, 103, 12); background-image: linear-gradient(9deg, rgb(255, 103, 3), rgb(255, 103, 3)) }
 .toys-stock-2 .price-stock { position: absolute; top: 58px; left: 189px; width: 50px; height: 33px; padding: 17px 0 0 0; margin: 0; border-radius: 50%; background: white; font-family: MuseoSansCyrl_700; font-size: 16px; text-align: center; color: rgb(255, 0, 0); }
 /*Второй блок с популярными товрами*/
 .popular-goods { width: 1260px; margin: 0 auto 94px auto; }
@@ -879,17 +880,6 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.xpandable-block { height: 120px;}
 @media only screen and (max-width:280px){
 	.xpandable-block { height: 140px;}
-
-
-
-
-
-
-
-
-
-
-
 
 
 

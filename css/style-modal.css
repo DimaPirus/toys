@@ -17,7 +17,7 @@ transition: -webkit-transform 0.6s ease-out; transition: transform 0.6s ease-out
 /* активируем мод. окно */
 .overlay-menu:target+.popup-menu { top: 200px; -webkit-transform: translate(-50%,-50%); transform: translate(-50%, -50%);}
 /* формируем кнопку закрытия */
-.close-menu { position: absolute; padding: 0; top: -10px; right: -10px; width: 22px; height: 22px; border: 2px solid #ccc; border-radius: 50%; background-color: rgba(61, 61, 61, 0.8); box-shadow: 0px 0px 10px #000; text-align: center; text-decoration: none; font-weight: bold; line-height: 20px; transition: background-color ease .7s; }
+.close-menu { position: absolute; padding: 0; top: 22px; right: 22px; width: 22px; height: 22px; border: 2px solid #ccc; border-radius: 50%; background-color: rgba(121, 121, 121, 0.8); box-shadow: 0px 0px 10px #000; text-align: center; text-decoration: none; font-weight: bold; line-height: 20px; transition: background-color ease .7s; }
 .close-menu:before { color: rgba(255, 255, 255, 0.9); content: '\2715'; text-shadow: 0 -1px rgba(0, 0, 0, 0.9); font-size: 12px; }
 .close-menu:hover { background-color: rgba(252, 20, 0, 0.8); }
 .popup-menu p { margin: 0; padding: 10px; }
