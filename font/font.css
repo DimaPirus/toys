@@ -118,3 +118,11 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'PFDinDisplayPro';
+    src: url('PFDinDisplayPro-Thin.woff2') format('woff2'),
+        url('PFDinDisplayPro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+

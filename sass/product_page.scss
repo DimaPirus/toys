@@ -41,7 +41,7 @@ header { width: auto; margin: 0 auto; font-family: MuseoSansCyrl_500; font-size:
 .dws-menu > ul{ display: flex; justify-content: left;}
 .dws-menu > ul li{ position: relative; }
 .dws-menu > ul li a{ display: block; margin: 0 10px 0 0; padding: 11px 20px 8px 18px; border-bottom: 4px solid transparent; font-size: 14px; font-family: MuseoSansCyrl_500; font-size: 18px; color: white; text-decoration: none; transition: all 0.3s ease;}
-.dws-menu li a:hover{	border-bottom: 4px solid rgb(255, 103, 3); transition: all 0.3s ease;}
+.dws-menu li a:hover{	border-bottom: 4px solid rgb(252, 153, 12); transition: all 0.3s ease;}
 .dws-menu .dropmenu { display: block;align-items: stretch; line-height: 2.5; position: relative; width: 120px; padding: 0 0 0 55px; margin:0 50px 0 0; background: rgb(255, 103, 3); letter-spacing: 1.8px; }
 .dws-menu .dropmenu img { position: absolute; top: 13px; left: 23px; }
 /*sub menu*/

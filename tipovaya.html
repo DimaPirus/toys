@@ -7,18 +7,21 @@
 		<link rel="stylesheet" href="css/style-modal.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/basket.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<title>Planet Toys</title>
 	</head>
 	<body>
 		<p class="toys">ПЛАНЕТА ИГРУШЕК</p>
-		<div class="block-1">	
+		<div class="block-1">
 			<p>COLORS</p>
 			<div>
 				<div>#FFFFFF</div>
 				<div>#FFFFFF</div>
 				<div>FF6703</div>
 				<div>FF6703</div>
-				<div>#fc9d0d<span>#ff6703</span></div>
+				<div>#fc9d0d</div>
 				<div>#fc9d0d<span>#ff6703</span></div>
 				<div>#f6f5fe</div>
 				<div>#f6f5fe</div>
@@ -32,7 +35,7 @@
 			<p>Museo Sans 300 <span>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</span> <span>0 1 2 3 4 5 6 7 8 9</span> <span>@ # $ % &</span></p>
 			<p>Museo Sans 500 <span>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</span> <span>0 1 2 3 4 5 6 7 8 9</span> <span>@ # $ % &</span></p>
 			<p>Museo Sans 700 <span>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</span> <span>0 1 2 3 4 5 6 7 8 9</span> <span>@ # $ % &</span></p>
-			<p>Museo Sans 900 <span>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</span> <span>0 1 2 3 4 5 6 7 8 9</span> <span>@ # $ % &</span></p>		
+			<p>Museo Sans 900 <span>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</span> <span>0 1 2 3 4 5 6 7 8 9</span> <span>@ # $ % &</span></p>
 		</div>
 		<div class="block-3">
 			<p class="nav">Typography</p>
@@ -81,5 +84,145 @@
 				</tr>
 			</table>
 		</div>
+		<div class="block-4">
+			<p class="nav">Hover</p>
+			<img src="img/line-3.png" alt="" class="line-3">
+			<a href="#" class="button">В корзину</a>
+			<a href="#" class="button button-hover">В корзину</a>
+			<div class="header-nav">
+				<div class="catalog-menu">
+					<nav class="dws-menu">
+						<ul>
+							<li class="li-none"><a href="#">Акции</a></li>
+							<li class="li-none"><a href="#">Доставка и самовывоз</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header-nav-2">
+				<div class="catalog-menu-2">
+					<nav class="dws-menu-2">
+						<ul>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Доставка и самовывоз</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="block-5">
+			<p class="nav">ELEMENTS</p>
+			<div class="left-sidebar">
+				<div id="filter-show-hide">
+					<div>
+						<input title="..." id="filter-hide" name="filter-hide" type="checkbox" />
+						<label title="...." for="filter-hide">Фильтр <img class="filter-img-1" src="img/filter.png" alt=""><img class="filter-img-2" src="img/filter-2.png" alt=""></label>
+						<div class="filter">
+							<div id="show-hide">
+								<input title=".." id="hide" name="hide" type="checkbox" />
+								<label for="hide" class="label">Цена</label>
+								<div class="block-hide">
+									<div class="slider">
+										<p>
+											<input type="text" id="amount" placeholder="от">
+											<input type="text" id="amount_1" placeholder="до">
+										</p>
+										<div id="slider-range"></div>
+										<p class="close-slider"><a href=""><img src="img/close-slider.png" alt=""><span>Сбросить фильтр</span></a></p>
+									</div>
+								</div>
+							</div>
+							<div id="show-hide">
+								<input title=".." id="hide-1" name="hide-1" type="checkbox" />
+								<label for="hide-1" class="label">Бренды</label>
+								<div class="block-hide brands">
+									<div class="checkbox">
+										<input id="check1" type="checkbox" name="check" value="check1">
+										<label for="check1">Lego</label>
+										<input id="check2" type="checkbox" name="check" value="check2">
+										<label for="check2">Brand 1</label>
+										<input id="check3" type="checkbox" name="check" value="check3">
+										<label for="check3">Brand 1</label>
+										<input id="check4" type="checkbox" name="check" value="check4">
+										<label for="check4">Brand 1</label>
+										<input id="check5" type="checkbox" name="check" value="check5">
+										<label for="check5">Brand 1</label>
+									</div>
+								</div>
+							</div>
+							<div id="show-hide">
+								<input title=".." id="hide-2" name="hide-2" type="checkbox" />
+								<label for="hide-2" class="label">Name</label>
+								<div class="block-hide names">
+									<div class="checkbox">
+										<input id="radio1" type="radio" name="radio" value="radio1">
+										<label for="radio1">Lego</label>
+										<input id="radio2" type="radio" name="radio" value="radio2">
+										<label for="radio2">Lego</label>
+										<input id="radio3" type="radio" name="radio" value="radio3">
+										<label for="radio3">Lego</label>
+										<input id="radio4" type="radio" name="radio" value="radio4">
+										<label for="radio4">Lego</label>
+										<input id="radio5" type="radio" name="radio" value="radio5">
+										<label for="radio5">Lego</label>
+									</div>
+								</div>
+							</div>
+							<div id="show-hide">
+								<input title=".." id="hide-3" name="hide-3" type="checkbox" />
+								<label for="hide-3" class="label">Name</label>
+								<div class="block-hide lists">
+									<div id="list-show-hide">
+										<div>
+											<input title=".." id="list-hide" name="list-hide" type="checkbox" />
+											<label for="list-hide">Выпадающий список</label>
+											<div class="list">
+												<a href="">Выпадающий список</a>
+												<a href="">Выпадающий список</a>
+												<a href="">Выпадающий список</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block-6">
+			<p class="nav">FAVICON</p>
+			<div class="line-4">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<p>16 х 16 px</p>
+			<p>32 х 32 px</p>
+			<p>64 х 64 px</p>
+			<p>128 х 128 px</p>
+			<img src="img/planet-1.png" alt="">
+			<img src="img/planet-2.png" alt="">
+			<img src="img/planet-3.png" alt="">
+			<img src="img/planet-4.png" alt="">
+		</div>
+		<p class="toys toys-2">thanks for watching</p>
+		<script>
+				$( function() {
+				$( "#slider-range" ).slider({
+				range: true,
+				min: 0,
+				max: 9999,
+				values: [ 0, 10000 ],
+				slide: function( event, ui ) {
+				$( "#amount" ).val( "" + ui.values[ 0 ]);
+				$( "#amount_1" ).val( "" + ui.values[ 1 ]);
+				}
+				});
+				$( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", от ) );
+				$( "#amount_1" ).val( "" + $( "#slider-range" ).slider( "values", до ) );
+				} );
+		</script>
 	</body>
 </html>
