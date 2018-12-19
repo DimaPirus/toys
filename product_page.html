@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<title>Catalog Planet Toys</title>
+		<title>Product Page Planet Toys</title>
 	</head>
 	<body>
 		<header>
@@ -58,11 +58,16 @@
 			<div class="header-info-centre">
 				<a href="" class="logo-href"><img src="img/logo.png" alt="logo"></a>
 				<form action="" method="get" class="search-1">
-					<input name="s" placeholder="Поиск товара по каталогу" type="search">
+					<input name="s" placeholder="Поиск товара" type="search">
 					<button type="submit" class="button-1">Найти</button>
 					<button type="submit" class="button-2"></button>
 				</form>
-				<div>
+				<div class="search-2">
+					<form id="demo-b">
+						<input type="search" placeholder="Поиск товара">
+					</form>
+				</div>
+				<div class="info-right">
 					<a href="">
 						<img src="img/profile.png" alt="profile">
 					</a>
@@ -72,202 +77,215 @@
 						<p>2</p>
 					</a>
 					<p>Всего <span>1 125 руб.</span></p>
-				</div>
-				<div class="search-2">
-					<form id="demo-b">
-						<input type="search" placeholder="Поиск товара">
-					</form>
-				</div>
-				<div class="burger-menu">
-					<input type="checkbox" id="hmt" class="hidden-menu-ticker">
-					<label class="btn-menu" for="hmt">
-						<span class="first"></span>
-						<span class="second"></span>
-						<span class="third"></span>
-					</label>
-					<ul class="hidden-menu">
-						<li><a href="">Акции</a></li>
-						<li><a href="">Доставка и самовывоз</a></li>
-						<li><a href="">Оплата</a></li>
-						<li><a href="">Гарантии качества</a></li>
-						<li><a href="">О компании</a></li>
-						<li><a href="">Контакты</a></li>
-					</ul>
+					<div class="burger-menu">
+						<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+						<label class="btn-menu" for="hmt">
+							<span class="first"></span>
+							<span class="second"></span>
+							<span class="third"></span>
+						</label>
+						<label class="btn-menu btn-menu-copy" for="hmt">
+							<span class="first"></span>
+							<span class="second"></span>
+							<span class="third"></span>
+						</label>
+						<ul class="hidden-menu">
+							<li><a href="">Акции</a></li>
+							<li><a href="">Доставка и самовывоз</a></li>
+							<li><a href="">Оплата</a></li>
+							<li><a href="">Гарантии качества</a></li>
+							<li><a href="">О компании</a></li>
+							<li><a href="">Контакты</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="header-nav">
-			<div class="catalog-menu">
-				<input type="checkbox" id="hmt-1" class="hidden-menu-ticker-1">
-				<label class="btn-menu-1" for="hmt-1">
-					<div class="close-btn-1">
-						<p><img src="img/grid.png" alt="">Каталог</p>
+			<div class="header-nav-overflow">
+				<div id="drop">
+					<a id="button_drop" href="#"><img src="img/grid.png" alt="" class="grid"> КАТАЛОГ</a>
+					<div id="informer" class="b-toggle">
+						<li><a href="#">Машинки</a></li>
+						<li><a href="#">КУКЛЫ</a></li>
+						<li><a href="#">Кoнстркуторы</a></li>
+						<li><a href="#">Дома</a></li>
+						<li><a href="#">ПазЛЫ</a></li>
+						<li><a href="#">Машинки</a></li>
+						<li><a href="#">КУКЛЫ</a></li>
+						<li><a href="#">КОнстркуторы</a></li>
+						<li><a href="#">Дома</a></li>
+						<li><a href="#">ПазЛЫ</a></li>
+						<li><a href="#">Машинки</a></li>
+						<li><a href="#">КУКЛЫ</a></li>
+						<li><a href="#">КОнстркуторы</a></li>
+						<li><a href="#">Дома</a></li>
+						<li><a href="#">ПазЛЫ</a></li>
 					</div>
-					<div class="close-btn-2">
-						<span class="first-1"></span>
-						<span class="second-1"></span>
-						<span class="third-1"></span>
-					</div>
-				</label>
-				<ul class="hidden-menu-1">
-					<li><a href="#">Машинки</a></li>
-					<li><a href="#">КУКЛЫ</a></li>
-					<li><a href="#">Кoнстркуторы</a></li>
-					<li><a href="#">Дома</a></li>
-					<li><a href="#">ПазЛЫ</a></li>
-					<li><a href="#">Машинки</a></li>
-					<li><a href="#">КУКЛЫ</a></li>
-					<li><a href="#">КОнстркуторы</a></li>
-					<li><a href="#">Дома</a></li>
-					<li><a href="#">ПазЛЫ</a></li>
-					<li><a href="#">Машинки</a></li>
-					<li><a href="#">КУКЛЫ</a></li>
-					<li><a href="#">КОнстркуторы</a></li>
-					<li><a href="#">Дома</a></li>
-					<li><a href="#">ПазЛЫ</a></li>
-				</ul>
-			</div>
-			<nav class="dws-menu">
-				<ul>
-					<li class="dropmenu"><img src="img/grid.png" alt="grid">КАТАЛОГ
-						<ul>
-							<li><a href="#">Машинки</a></li>
-							<li><a href="#">КУКЛЫ</a></li>
-							<li><a href="#">КОнстркуторы</a></li>
-							<li><a href="#">Дома</a></li>
-							<li><a href="#">ПазЛЫ</a></li>
-							<li><a href="#">Машинки</a></li>
-							<li><a href="#">КУКЛЫ</a></li>
-							<li><a href="#">КОнстркуторы</a></li>
-							<li><a href="#">Дома</a></li>
-							<li><a href="#">ПазЛЫ</a></li>
-							<li><a href="#">Машинки</a></li>
-							<li><a href="#">КУКЛЫ</a></li>
-							<li><a href="#">КОнстркуторы</a></li>
-							<li><a href="#">Дома</a></li>
-							<li><a href="#">ПазЛЫ</a></li>
-						</ul></li>
+				</div>
+				<nav class="dws-menu">
+					<ul>
 						<li class="li-none"><a href="#">Акции</a></li>
 						<li class="li-none"><a href="#">Доставка и самовывоз</a></li>
 						<li class="li-none"><a href="#">Оплата</a></li>
-						<li class="li-none"><a href="#">Гарантии качества</a></li>
-						<li class="li-none"><a href="#">О компании</a></li>
-						<li class="li-none"><a href="#">Контакты</a></li>
+						<li class="li-none li-none-2"><a href="#">Гарантии качества</a></li>
+						<li class="li-none li-none-2"><a href="#">О компании</a></li>
+						<li class="li-none li-none-2"><a href="#">Контакты</a></li>
+						<div id="sweeties" class="menu">
+							<span class="title">Еще</span>
+							<ul>
+								<li><a href="#">Гарантии качества</a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
 					</ul>
 				</nav>
 			</div>
-		</header>
-		<div id="content-overflow">
-			<div class="content-nav-overflow">
-				<div class="content-nav">
-					<p>
-						<a href="#">Главная </a><span>></span>
-						<a href="#">Каталог </a><span>></span>
-						<a href="#">Для мальчиков</a>
-					</p>
-				</div>
+		</div>
+	</header>
+	<div id="content-overflow">
+		<div class="content-nav-overflow">
+			<div class="content-nav">
+				<p>
+					<a href="#">Главная </a><span>></span>
+					<a href="#">Каталог </a><span>></span>
+					<a href="#">Для мальчиков</a>
+				</p>
 			</div>
-			<div class="content">
-				<div class="product-page">
-					<p class="headline headline-1">Автомобиль на р/у Sulong Toys 1:18 Off road Crawler Tiger</p>
-					<div class="card-product">
-						<div class="top-left">
-							<div id="slider">
-								<input type="radio" name="slider" id="slide1" checked="">
-								<input type="radio" name="slider" id="slide2">
-								<input type="radio" name="slider" id="slide3">
-								<input type="radio" name="slider" id="slide4">
-								<input type="radio" name="slider" id="slide5">
-								<div id="slides">
-									<div id="overflow">
-										<div class="inner">
-											<div class="page">
-												<p class="new">Новинка</p>
-												<p class="new price-2">-30%</p>
-												<img src="img/jeep.png" />
-											</div>
-											<div class="page">
-												<p class="new">Новинка</p>
-												<p class="new price-2">-30%</p>
-												<img src="img/jeep.png" />
-											</div>
-											<div class="page">
-												<p class="new">Новинка</p>
-												<p class="new price-2">-30%</p>
-												<img src="img/jeep.png" />
-											</div>
-											<div class="page">
-												<p class="new">Новинка</p>
-												<p class="new price-2">-30%</p>
-												<img src="img/jeep.png" />
-											</div>
-											</div> <!--inner-->
-											</div> <!--overflow-->
-											</div> <!--slides-->
-											
-											<div id="active">
-												<label for="slide1"><img src="img/jeep-mini.png" alt=""></label>
-												<label for="slide2"><img src="img/jeep-mini.png" alt=""></label>
-												<label for="slide3"><img src="img/jeep-mini.png" alt=""></label>
-												<label for="slide4"><img src="img/jeep-mini.png" alt=""></label>
-												<label for="slide5"><img src="img/jeep-mini.png" alt=""></label>
-											</div>
+		</div>
+		<div class="content">
+			<div class="product-page">
+				<p class="headline headline-1">Автомобиль на р/у Sulong Toys 1:18 Off road Crawler Tiger</p>
+				<div class="card-product">
+					<div class="top-left">
+						<div id="slider">
+							<input type="radio" name="slider" id="slide1" checked="">
+							<input type="radio" name="slider" id="slide2">
+							<input type="radio" name="slider" id="slide3">
+							<input type="radio" name="slider" id="slide4">
+							<input type="radio" name="slider" id="slide5">
+							<div id="slides">
+								<div id="overflow">
+									<div class="inner">
+										<div class="page">
+											<p class="new">Новинка</p>
+											<p class="new price-2">-30%</p>
+											<img src="img/jeep.png" />
+										</div>
+										<div class="page">
+											<p class="new">Новинка</p>
+											<p class="new price-2">-30%</p>
+											<img src="img/jeep.png" />
+										</div>
+										<div class="page">
+											<p class="new">Новинка</p>
+											<p class="new price-2">-30%</p>
+											<img src="img/jeep.png" />
+										</div>
+										<div class="page">
+											<p class="new">Новинка</p>
+											<p class="new price-2">-30%</p>
+											<img src="img/jeep.png" />
+										</div>
+										</div> <!--inner-->
+										</div> <!--overflow-->
+										</div> <!--slides-->
+										
+										<div id="active">
+											<label for="slide1"><img src="img/jeep-mini.png" alt=""></label>
+											<label for="slide2"><img src="img/jeep-mini.png" alt=""></label>
+											<label for="slide3"><img src="img/jeep-mini.png" alt=""></label>
+											<label for="slide4"><img src="img/jeep-mini.png" alt=""></label>
+											<label for="slide5"><img src="img/jeep-mini.png" alt=""></label>
 										</div>
 									</div>
-									<div class="top-right">
-										<div class="price-amount">
-											<p class="toy-price toy-price-1">Старая цена <span>1 099 руб.</span></p>
-											<p class="toy-price toy-price-2">Новая цена <span>1 000 руб.</span></p>
-											<div class="container-basket">
-												<div>
-													<a href="#bask2" class="button-bask"><p>В корзину</p></a>
-												</div>
-												<!-- Модальное окно 1 -->
-												<a href="#x" class="overlay-bask" id="bask2"></a>
-												<div class="popup-bask">
-													<div class="basket">
-														<p>Ваш товар добавлен в корзину</p>
-														<div>
-															<a href="#">Продолжить покупки</a>
-															<a href="#">Перейти в корзину</a>
-														</div>
-													</div>
-													<a class="close-bask" title="Закрыть" href="#close"></a>
-												</div>
+								</div>
+								<div class="top-right">
+									<div class="price-amount">
+										<p class="toy-price toy-price-1">Старая цена <span>1 099 руб.</span></p>
+										<p class="toy-price toy-price-2">Новая цена <span>1 000 руб.</span></p>
+										<div class="container-basket">
+											<div>
+												<a href="#bask2" class="button-bask"><p>В корзину</p></a>
 											</div>
-											<a href="#" class="buy-one-clik">Купить в 1 клик</a>
-											<div class="order">
-												<section>
-													<div class="stepper stepper--style-2 js-spinner">
-														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
-														<div class="stepper__controls">
-															<button type="button" spinner-button="up">+</button>
-															<button type="button" spinner-button="down">-</button>
-														</div>
+											<!-- Модальное окно 1 -->
+											<a href="#x" class="overlay-bask" id="bask2"></a>
+											<div class="popup-bask">
+												<div class="basket">
+													<p>Ваш товар добавлен в корзину</p>
+													<div>
+														<a href="#">Продолжить покупки</a>
+														<a href="#">Перейти в корзину</a>
 													</div>
-												</section>
-												<div style="clear:both;"></div>
+												</div>
+												<a class="close-bask" title="Закрыть" href="#close"></a>
 											</div>
-											<p class="article">Артикул: РС - А3 - 73</p>
 										</div>
-										<div class="page-text">
-											<p class="page-text-hide">Невероятный радиоуправляемый автомобиль Sulong Toys Off-Road Crawler Tiger доставит вашему ребенку массу незабываемых впечатлений от динамичной, захватывающей игры. Благодаря качественной резине, из которой изготовлены шины, модель автомобиля покорит любые дороги на планете. Автомобиль оснащен по последнему слову игрушечной техники: он имеет внедорожную зависимую пружинную подвеску, имитацию межосевого дифференциала, шаровые опоры и реактивные тяги, что позволяет ему имитировать маневры настоящей машины, обеспечивать устойчивость и лучшее сцепление автомобиля с дорогой.</p>
-											<div class="text-show-hide">
-												<div class="wrapper">
-													<label for="button">Читать дальше</label>
-													<input type="checkbox" id="button">
-													<div class="xpandable-block"><p class="page-text-disp">Невероятный радиоуправляемый автомобиль Sulong Toys Off-Road Crawler Tiger доставит вашему ребенку массу незабываемых впечатлений от динамичной, захватывающей игры. Благодаря качественной резине, из которой изготовлены шины, модель автомобиля покорит любые дороги на планете. Автомобиль оснащен по последнему слову игрушечной техники: он имеет внедорожную зависимую пружинную подвеску, имитацию межосевого дифференциала, шаровые опоры и реактивные тяги, что позволяет ему имитировать маневры настоящей машины, обеспечивать устойчивость и лучшее сцепление автомобиля с дорогой.</p></div>
+										<a href="#" class="buy-one-clik">Купить в 1 клик</a>
+										<div class="order">
+											<section>
+												<div class="stepper stepper--style-2 js-spinner">
+													<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
+													<div class="stepper__controls">
+														<button type="button" spinner-button="up">+</button>
+														<button type="button" spinner-button="down">-</button>
+													</div>
 												</div>
+											</section>
+											<div style="clear:both;"></div>
+										</div>
+										<p class="article">Артикул: РС - А3 - 73</p>
+									</div>
+									<div class="page-text">
+										<p class="page-text-hide">Невероятный радиоуправляемый автомобиль Sulong Toys Off-Road Crawler Tiger доставит вашему ребенку массу незабываемых впечатлений от динамичной, захватывающей игры. Благодаря качественной резине, из которой изготовлены шины, модель автомобиля покорит любые дороги на планете. Автомобиль оснащен по последнему слову игрушечной техники: он имеет внедорожную зависимую пружинную подвеску, имитацию межосевого дифференциала, шаровые опоры и реактивные тяги, что позволяет ему имитировать маневры настоящей машины, обеспечивать устойчивость и лучшее сцепление автомобиля с дорогой.</p>
+										<div class="text-show-hide">
+											<div>
+												<input type="checkbox" class="read-more-state" id="post-1" />
+												<p class="read-more-wrap">Невероятный радиоуправляемый автомобиль Sulong Toys Off-Road Crawler Tiger доставит вашему ребенку массу незабываемых впечатлений от динамичной, захватывающей игры. <span class="read-more-target">Благодаря качественной резине, из которой изготовлены шины, модель автомобиля покорит любые дороги на планете. Автомобиль оснащен по последнему слову игрушечной техники: он имеет внедорожную зависимую пружинную подвеску, имитацию межосевого дифференциала, шаровые опоры и реактивные тяги, что позволяет ему имитировать маневры настоящей машины, обеспечивать устойчивость и лучшее сцепление автомобиля с дорогой.</span></p>
+												<label for="post-1" class="read-more-trigger"></label>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="product-tabs">
-								<ul class="tabs">
-									<li>
-										<input type="radio" name="tabs" id="tab-1" checked>
-										<label for="tab-1">Характеристики</label>
+						</div>
+						<div class="product-tabs">
+							<ul class="tabs">
+								<li>
+									<input type="radio" name="tabs" id="tab-1" checked>
+									<label for="tab-1">Характеристики</label>
+									<div class="tab-content">
+										<p>Артикул товара: З8488423</p>
+										<p>Тип: Автомобили</p>
+										<p>Радиус действия: до 50 м</p>
+										<p>Комплектация: Машинка,Пульт управления, USB-шнур</p>
+										<p>Возраст: 8 лет и старше</p>
+										<p>Вес: 500 г.</p>
+										<p>Размер: 10 х 20 х 30</p>
+									</div>
+								</li>
+								<li>
+									<input type="radio" name="tabs" id="tab-2">
+									<label for="tab-2">Описание</label>
+									<div class="tab-content">
+										Невероятный радиоуправляемый автомобиль Sulong Toys Off-Road Crawler Tiger доставит вашему ребенку массу незабываемых впечатлений от динамичной, захватывающей игры. Благодаря качественной резине, из которой изготовлены шины, модель автомобиля покорит любые дороги на планете. Автомобиль оснащен по последнему слову игрушечной техники: он имеет внедорожную зависимую пружинную подвеску, имитацию межосевого дифференциала, шаровые опоры и реактивные тяги, что позволяет ему имитировать маневры настоящей машины, обеспечивать устойчивость и лучшее сцепление автомобиля с дорогой.
+									</div>
+								</li>
+								<li>
+									<input type="radio" name="tabs" id="tab-3">
+									<label for="tab-3">Отзывы</label>
+									<div class="tab-content">
+										Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</div>
+								</li>
+							</ul>
+							<div id="tabs-show-hide">
+								<div>
+									<input title=".." id="tabs-hide" name="tabs-hide" type="checkbox" />
+									<label for="tabs-hide">Характеристики</label>
+									<div class="tabs-conteiner">
 										<div class="tab-content">
 											<p>Артикул товара: З8488423</p>
 											<p>Тип: Автомобили</p>
@@ -277,329 +295,354 @@
 											<p>Вес: 500 г.</p>
 											<p>Размер: 10 х 20 х 30</p>
 										</div>
-									</li>
-									<li>
-										<input type="radio" name="tabs" id="tab-2">
-										<label for="tab-2">Описание</label>
+									</div>
+								</div>
+							</div>
+							<div id="tabs-show-hide-2">
+								<div>
+									<input title=".." id="tabs-hide-2" name="tabs-hide-2" type="checkbox" />
+									<label for="tabs-hide-2">Описание</label>
+									<div class="tabs-conteiner">
 										<div class="tab-content">
 											Невероятный радиоуправляемый автомобиль Sulong Toys Off-Road Crawler Tiger доставит вашему ребенку массу незабываемых впечатлений от динамичной, захватывающей игры. Благодаря качественной резине, из которой изготовлены шины, модель автомобиля покорит любые дороги на планете. Автомобиль оснащен по последнему слову игрушечной техники: он имеет внедорожную зависимую пружинную подвеску, имитацию межосевого дифференциала, шаровые опоры и реактивные тяги, что позволяет ему имитировать маневры настоящей машины, обеспечивать устойчивость и лучшее сцепление автомобиля с дорогой.
 										</div>
-									</li>
-									<li>
-										<input type="radio" name="tabs" id="tab-3">
-										<label for="tab-3">Отзывы</label>
+									</div>
+								</div>
+							</div>
+							<div id="tabs-show-hide-3">
+								<div>
+									<input title=".." id="tabs-hide-3" name="tabs-hide-2" type="checkbox" />
+									<label for="tabs-hide-3">Отзывы</label>
+									<div class="tabs-conteiner">
 										<div class="tab-content">
-											Excepteur sint occaecat cupidatat non
-											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-										</div>
-									</li>
-								</ul>
-								<div id="tabs-show-hide">
-									<div>
-										<input title=".." id="tabs-hide" name="tabs-hide" type="checkbox" />
-										<label for="tabs-hide">Характеристики</label>
-										<div class="tabs-conteiner">
-											<div class="tab-content">
-												<p>Артикул товара: З8488423</p>
-												<p>Тип: Автомобили</p>
-												<p>Радиус действия: до 50 м</p>
-												<p>Комплектация: Машинка,Пульт управления, USB-шнур</p>
-												<p>Возраст: 8 лет и старше</p>
-												<p>Вес: 500 г.</p>
-												<p>Размер: 10 х 20 х 30</p>
-											</div>
+											Невероятный радиоуправляемый автомобиль Sulong Toys Off-Road Crawler Tiger доставит вашему ребенку массу незабываемых впечатлений от динамичной, захватывающей игры. Благодаря качественной резине, из которой изготовлены шины, модель автомобиля покорит любые дороги на планете. Автомобиль оснащен по последнему слову игрушечной техники: он имеет внедорожную зависимую пружинную подвеску, имитацию межосевого дифференциала, шаровые опоры и реактивные тяги, что позволяет ему имитировать маневры настоящей машины, обеспечивать устойчивость и лучшее сцепление автомобиля с дорогой.
 										</div>
 									</div>
 								</div>
-								<div id="tabs-show-hide-2">
-									<div>
-										<input title=".." id="tabs-hide-2" name="tabs-hide-2" type="checkbox" />
-										<label for="tabs-hide-2">Описание</label>
-										<div class="tabs-conteiner">
-											<div class="tab-content">
-												Невероятный радиоуправляемый автомобиль Sulong Toys Off-Road Crawler Tiger доставит вашему ребенку массу незабываемых впечатлений от динамичной, захватывающей игры. Благодаря качественной резине, из которой изготовлены шины, модель автомобиля покорит любые дороги на планете. Автомобиль оснащен по последнему слову игрушечной техники: он имеет внедорожную зависимую пружинную подвеску, имитацию межосевого дифференциала, шаровые опоры и реактивные тяги, что позволяет ему имитировать маневры настоящей машины, обеспечивать устойчивость и лучшее сцепление автомобиля с дорогой.
+							</div>
+						</div>
+						<div class="similar-goods-wrap">
+							<p class="headline headline-3">Похожие товары</p>
+							<div class="similar-goods">
+								<div class="product">
+									<div class="img-popular-toy">
+										<p class="new">Новинка</p>
+										<p class="new price-2">-30%</p>
+										<img src="img/popular-toy-3.png" alt="popular-toy" class="image-toy image-toy-2">
+										<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
+									</div>
+									<div class="star-review">
+										<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
+										<p class="review">отзывы <span>(27)</span></p>
+									</div>
+									<div class="price-popular-toy">
+										<p class="old-price">9 500 руб.</p>
+										<p class="new-price">7999 руб.</p>
+									</div>
+									<div class="container-basket">
+										<div>
+											<a href="#bask2" class="button-bask"><img src="img/shop-bag-toy.png" alt=""><p>Добавить в корзину</p></a>
+										</div>
+										<!-- Модальное окно 1 -->
+										<a href="#x" class="overlay-bask" id="bask2"></a>
+										<div class="popup-bask">
+											<div class="basket">
+												<p>Ваш товар добавлен в корзину</p>
+												<div>
+													<a href="#">Продолжить покупки</a>
+													<a href="#">Перейти в корзину</a>
+												</div>
 											</div>
+											<a class="close-bask" title="Закрыть" href="#close"></a>
 										</div>
 									</div>
 								</div>
-								<div id="tabs-show-hide-3">
-									<div>
-										<input title=".." id="tabs-hide-3" name="tabs-hide-2" type="checkbox" />
-										<label for="tabs-hide-3">Отзывы</label>
-										<div class="tabs-conteiner">
-											<div class="tab-content">
-												Невероятный радиоуправляемый автомобиль Sulong Toys Off-Road Crawler Tiger доставит вашему ребенку массу незабываемых впечатлений от динамичной, захватывающей игры. Благодаря качественной резине, из которой изготовлены шины, модель автомобиля покорит любые дороги на планете. Автомобиль оснащен по последнему слову игрушечной техники: он имеет внедорожную зависимую пружинную подвеску, имитацию межосевого дифференциала, шаровые опоры и реактивные тяги, что позволяет ему имитировать маневры настоящей машины, обеспечивать устойчивость и лучшее сцепление автомобиля с дорогой.
+								<div class="product product-hide">
+									<div class="img-popular-toy">
+										<p class="new">Новинка</p>
+										<p class="new price-2">-30%</p>
+										<img src="img/popular-toy-3.png" alt="popular-toy" class="image-toy image-toy-2">
+										<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
+									</div>
+									<div class="star-review">
+										<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
+										<p class="review">отзывы <span>(27)</span></p>
+									</div>
+									<div class="price-popular-toy">
+										<p class="old-price">9 500 руб.</p>
+										<p class="new-price">7999 руб.</p>
+									</div>
+									<div class="container-basket">
+										<div>
+											<a href="#bask2" class="button-bask"><img src="img/shop-bag-toy.png" alt=""><p>Добавить в корзину</p></a>
+										</div>
+										<!-- Модальное окно 1 -->
+										<a href="#x" class="overlay-bask" id="bask2"></a>
+										<div class="popup-bask">
+											<div class="basket">
+												<p>Ваш товар добавлен в корзину</p>
+												<div>
+													<a href="#">Продолжить покупки</a>
+													<a href="#">Перейти в корзину</a>
+												</div>
+											</div>
+											<a class="close-bask" title="Закрыть" href="#close"></a>
+										</div>
+									</div>
+								</div>
+								<div class="product-still">
+									<div class="product-still-all">
+										<input title=".." id="prod-hide" name="prod-hide" type="checkbox" />
+										<label for="prod-hide">Показать еще...</label>
+										<div class="similar-goods-still">
+											<div class="product">
+												<div class="img-popular-toy">
+													<p class="new">Новинка</p>
+													<p class="new price-2">-30%</p>
+													<img src="img/popular-toy-3.png" alt="popular-toy" class="image-toy image-toy-2">
+													<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
+												</div>
+												<div class="star-review">
+													<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
+													<p class="review">отзывы <span>(27)</span></p>
+												</div>
+												<div class="price-popular-toy">
+													<p class="old-price">9 500 руб.</p>
+													<p class="new-price">7999 руб.</p>
+												</div>
+												<div class="container-basket">
+													<div>
+														<a href="#bask2" class="button-bask"><img src="img/shop-bag-toy.png" alt=""><p>Добавить в корзину</p></a>
+													</div>
+													<!-- Модальное окно 1 -->
+													<a href="#x" class="overlay-bask" id="bask2"></a>
+													<div class="popup-bask">
+														<div class="basket">
+															<p>Ваш товар добавлен в корзину</p>
+															<div>
+																<a href="#">Продолжить покупки</a>
+																<a href="#">Перейти в корзину</a>
+															</div>
+														</div>
+														<a class="close-bask" title="Закрыть" href="#close"></a>
+													</div>
+												</div>
+											</div>
+											<div class="product">
+												<div class="img-popular-toy">
+													<p class="new">Новинка</p>
+													<p class="new price-2">-30%</p>
+													<img src="img/popular-toy-3.png" alt="popular-toy" class="image-toy image-toy-2">
+													<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
+												</div>
+												<div class="star-review">
+													<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
+													<p class="review">отзывы <span>(27)</span></p>
+												</div>
+												<div class="price-popular-toy">
+													<p class="old-price">9 500 руб.</p>
+													<p class="new-price">7999 руб.</p>
+												</div>
+												<div class="container-basket">
+													<div>
+														<a href="#bask2" class="button-bask"><img src="img/shop-bag-toy.png" alt=""><p>Добавить в корзину</p></a>
+													</div>
+													<!-- Модальное окно 1 -->
+													<a href="#x" class="overlay-bask" id="bask2"></a>
+													<div class="popup-bask">
+														<div class="basket">
+															<p>Ваш товар добавлен в корзину</p>
+															<div>
+																<a href="#">Продолжить покупки</a>
+																<a href="#">Перейти в корзину</a>
+															</div>
+														</div>
+														<a class="close-bask" title="Закрыть" href="#close"></a>
+													</div>
+												</div>
+											</div>
+											<div class="product">
+												<div class="img-popular-toy">
+													<p class="new">Новинка</p>
+													<p class="new price-2">-30%</p>
+													<img src="img/popular-toy-3.png" alt="popular-toy" class="image-toy image-toy-2">
+													<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
+												</div>
+												<div class="star-review">
+													<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
+													<p class="review">отзывы <span>(27)</span></p>
+												</div>
+												<div class="price-popular-toy">
+													<p class="old-price">9 500 руб.</p>
+													<p class="new-price">7999 руб.</p>
+												</div>
+												<div class="container-basket">
+													<div>
+														<a href="#bask2" class="button-bask"><img src="img/shop-bag-toy.png" alt=""><p>Добавить в корзину</p></a>
+													</div>
+													<!-- Модальное окно 1 -->
+													<a href="#x" class="overlay-bask" id="bask2"></a>
+													<div class="popup-bask">
+														<div class="basket">
+															<p>Ваш товар добавлен в корзину</p>
+															<div>
+																<a href="#">Продолжить покупки</a>
+																<a href="#">Перейти в корзину</a>
+															</div>
+														</div>
+														<a class="close-bask" title="Закрыть" href="#close"></a>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="similar-goods-wrap">
-								<p class="headline headline-3">Похожие товары</p>
-									<div class="similar-goods">
-										<div class="product">
-											<div class="img-popular-toy">
-												<p class="new">Новинка</p>
-												<p class="new price-2">-30%</p>
-												<img src="img/popular-toy-3.png" alt="popular-toy" class="image-toy image-toy-2">
-												<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
-											</div>
-											<div class="star-review">
-												<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
-												<p class="review">отзывы <span>(27)</span></p>
-											</div>
-											<div class="price-popular-toy">
-												<p class="old-price">9 500 руб.</p>
-												<p class="new-price">7999 руб.</p>
-											</div>
-											<div class="container-basket">
-												<div>
-													<a href="#bask2" class="button-bask"><img src="img/shop-bag-toy.png" alt=""><p>Добавить в корзину</p></a>
-												</div>
-												<!-- Модальное окно 1 -->
-												<a href="#x" class="overlay-bask" id="bask2"></a>
-												<div class="popup-bask">
-													<div class="basket">
-														<p>Ваш товар добавлен в корзину</p>
-														<div>
-															<a href="#">Продолжить покупки</a>
-															<a href="#">Перейти в корзину</a>
-														</div>
-													</div>
-													<a class="close-bask" title="Закрыть" href="#close"></a>
-												</div>
-											</div>
-										</div>
-										<div class="product product-hide">
-											<div class="img-popular-toy">
-												<p class="new">Новинка</p>
-												<p class="new price-2">-30%</p>
-												<img src="img/popular-toy-3.png" alt="popular-toy" class="image-toy image-toy-2">
-												<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
-											</div>
-											<div class="star-review">
-												<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
-												<p class="review">отзывы <span>(27)</span></p>
-											</div>
-											<div class="price-popular-toy">
-												<p class="old-price">9 500 руб.</p>
-												<p class="new-price">7999 руб.</p>
-											</div>
-											<div class="container-basket">
-												<div>
-													<a href="#bask2" class="button-bask"><img src="img/shop-bag-toy.png" alt=""><p>Добавить в корзину</p></a>
-												</div>
-												<!-- Модальное окно 1 -->
-												<a href="#x" class="overlay-bask" id="bask2"></a>
-												<div class="popup-bask">
-													<div class="basket">
-														<p>Ваш товар добавлен в корзину</p>
-														<div>
-															<a href="#">Продолжить покупки</a>
-															<a href="#">Перейти в корзину</a>
-														</div>
-													</div>
-													<a class="close-bask" title="Закрыть" href="#close"></a>
-												</div>
-											</div>
-										</div>
-										<div class="product-still">
-											<div class="product-still-all">
-												<input title=".." id="prod-hide" name="prod-hide" type="checkbox" />
-												<label for="prod-hide">Показать еще...</label>
-												<div class="similar-goods-still">
-													<div class="product">
-														<div class="img-popular-toy">
-															<p class="new">Новинка</p>
-															<p class="new price-2">-30%</p>
-															<img src="img/popular-toy-3.png" alt="popular-toy" class="image-toy image-toy-2">
-															<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
-														</div>
-														<div class="star-review">
-															<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
-															<p class="review">отзывы <span>(27)</span></p>
-														</div>
-														<div class="price-popular-toy">
-															<p class="old-price">9 500 руб.</p>
-															<p class="new-price">7999 руб.</p>
-														</div>
-														<div class="container-basket">
-															<div>
-																<a href="#bask2" class="button-bask"><img src="img/shop-bag-toy.png" alt=""><p>Добавить в корзину</p></a>
-															</div>
-															<!-- Модальное окно 1 -->
-															<a href="#x" class="overlay-bask" id="bask2"></a>
-															<div class="popup-bask">
-																<div class="basket">
-																	<p>Ваш товар добавлен в корзину</p>
-																	<div>
-																		<a href="#">Продолжить покупки</a>
-																		<a href="#">Перейти в корзину</a>
-																	</div>
-																</div>
-																<a class="close-bask" title="Закрыть" href="#close"></a>
-															</div>
-														</div>
-													</div>
-													<div class="product">
-														<div class="img-popular-toy">
-															<p class="new">Новинка</p>
-															<p class="new price-2">-30%</p>
-															<img src="img/popular-toy-3.png" alt="popular-toy" class="image-toy image-toy-2">
-															<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
-														</div>
-														<div class="star-review">
-															<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
-															<p class="review">отзывы <span>(27)</span></p>
-														</div>
-														<div class="price-popular-toy">
-															<p class="old-price">9 500 руб.</p>
-															<p class="new-price">7999 руб.</p>
-														</div>
-														<div class="container-basket">
-															<div>
-																<a href="#bask2" class="button-bask"><img src="img/shop-bag-toy.png" alt=""><p>Добавить в корзину</p></a>
-															</div>
-															<!-- Модальное окно 1 -->
-															<a href="#x" class="overlay-bask" id="bask2"></a>
-															<div class="popup-bask">
-																<div class="basket">
-																	<p>Ваш товар добавлен в корзину</p>
-																	<div>
-																		<a href="#">Продолжить покупки</a>
-																		<a href="#">Перейти в корзину</a>
-																	</div>
-																</div>
-																<a class="close-bask" title="Закрыть" href="#close"></a>
-															</div>
-														</div>
-													</div>
-													<div class="product">
-														<div class="img-popular-toy">
-															<p class="new">Новинка</p>
-															<p class="new price-2">-30%</p>
-															<img src="img/popular-toy-3.png" alt="popular-toy" class="image-toy image-toy-2">
-															<p class="name-toy">Автомобиль на р/у Sulong Toys 1:18 Off-Road Crawler Tiger Металлический Черный</p>
-														</div>
-														<div class="star-review">
-															<p class="rang">Рейтинг товара: <span><img src="img/stars.png" alt="stars"></span></p>
-															<p class="review">отзывы <span>(27)</span></p>
-														</div>
-														<div class="price-popular-toy">
-															<p class="old-price">9 500 руб.</p>
-															<p class="new-price">7999 руб.</p>
-														</div>
-														<div class="container-basket">
-															<div>
-																<a href="#bask2" class="button-bask"><img src="img/shop-bag-toy.png" alt=""><p>Добавить в корзину</p></a>
-															</div>
-															<!-- Модальное окно 1 -->
-															<a href="#x" class="overlay-bask" id="bask2"></a>
-															<div class="popup-bask">
-																<div class="basket">
-																	<p>Ваш товар добавлен в корзину</p>
-																	<div>
-																		<a href="#">Продолжить покупки</a>
-																		<a href="#">Перейти в корзину</a>
-																	</div>
-																</div>
-																<a class="close-bask" title="Закрыть" href="#close"></a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+						</div>
+						<div class="updates-form">
+							<div>
+								<img src="img/logo.png" alt="">
+							</div>
+							<div>
+								<p>Подписывайтесь на обновления</p>
+								<form action="" method="get">
+									<input name="email" placeholder="Ваш E-mail" type="email">
+									<button type="submit" class="button-2"><span>Подписаться</span></button>
+								</form>
+							</div>
+						</div>
+						<footer>
+							<div class="footer">
+								<div class="logo-footer">
+									<img src="img/logo.png" alt="">
+									<p>© 2018 – Все права защищены</p>
 								</div>
-										<div class="updates-form">
-											<div>
-												<img src="img/logo.png" alt="">
-											</div>
-											<div>
-												<p>Подписывайтесь на обновления</p>
-												<form action="" method="get">
-													<input name="email" placeholder="Ваш E-mail" type="email">
-													<button type="submit" class="button-2"><span>Подписаться</span></button>
-												</form>
-											</div>
-										</div>
-									<footer>
-										<div class="footer">
-											<div class="logo-footer">
-												<img src="img/logo.png" alt="">
-												<p>© 2018 – Все права защищены</p>
-											</div>
-											<ul>
-												<li>Меню</li>
-												<a href="">
-													<li>Акции</li>
-												</a>
-												<a href="">
-													<li>Доставка и самовывоз</li>
-												</a>
-												<a href="">
-													<li>Оплата</li>
-												</a>
-												<a href="">
-													<li>Гарантии качества</li>
-												</a>
-												<a href="">
-													<li>О компании</li>
-												</a>
-												<a href="">
-													<li>Контакты</li>
-												</a>
-											</ul>
-											<ul>
-												<li>Каталог</li>
-												<a href="">
-													<li>Для самых маленьких</li>
-												</a>
-												<a href="">
-													<li>Для мальчиков</li>
-												</a>
-												<a href="">
-													<li>Для девочек</li>
-												</a>
-												<a href="">
-													<li>Развивающие</li>
-												</a>
-												<a href="">
-													<li>Логические</li>
-												</a>
-												<a href="">
-													<li>Конструкторы</li>
-												</a>
-											</ul>
-											<ul>
-												<li>Контакты</li>
-												<li class="oclock-2"><img src="img/oclock-green.png" alt="">Пн-Пт с 10:00 до 20:00 </li>
-												<a href="tel:+79566373333">
-													<li><img src="img/phone-green.png" alt="">+ 7 (956) 637 33 33</li>
-												</a>
-												<a href="">
-													<li><img src="img/mail-green.png" alt=""><span>info@planeta-igrushek.ru</span></li>
-												</a>
-											</ul>
-										</div>
-									</footer>
-									<script>
-									$( function() {
-									$( "#slider-range" ).slider({
-									range: true,
-									min: 0,
-									max: 9999,
-									values: [ 0, 10000 ],
-									slide: function( event, ui ) {
-									$( "#amount" ).val( "" + ui.values[ 0 ]);
-									$( "#amount_1" ).val( "" + ui.values[ 1 ]);
-									}
-									});
-									$( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", от ) );
-									$( "#amount_1" ).val( "" + $( "#slider-range" ).slider( "values", до ) );
-									} );
-									</script>
-									<script src="js/stepper.min.js"></script>
-								</body>
-							</html>
+								<ul>
+									<li>Меню</li>
+									<a href="">
+										<li>Акции</li>
+									</a>
+									<a href="">
+										<li>Доставка и самовывоз</li>
+									</a>
+									<a href="">
+										<li>Оплата</li>
+									</a>
+									<a href="">
+										<li>Гарантии качества</li>
+									</a>
+									<a href="">
+										<li>О компании</li>
+									</a>
+									<a href="">
+										<li>Контакты</li>
+									</a>
+								</ul>
+								<ul>
+									<li>Каталог</li>
+									<a href="">
+										<li>Для самых маленьких</li>
+									</a>
+									<a href="">
+										<li>Для мальчиков</li>
+									</a>
+									<a href="">
+										<li>Для девочек</li>
+									</a>
+									<a href="">
+										<li>Развивающие</li>
+									</a>
+									<a href="">
+										<li>Логические</li>
+									</a>
+									<a href="">
+										<li>Конструкторы</li>
+									</a>
+								</ul>
+								<ul>
+									<li>Контакты</li>
+									<li class="oclock-2"><img src="img/oclock-green.png" alt="">Пн-Пт с 10:00 до 20:00 </li>
+									<a href="tel:+79566373333">
+										<li><img src="img/phone-green.png" alt="">+ 7 (956) 637 33 33</li>
+									</a>
+									<a href="">
+										<li><img src="img/mail-green.png" alt=""><span>info@planeta-igrushek.ru</span></li>
+									</a>
+								</ul>
+							</div>
+						</footer>
+						<div id="toTop"><img src="img/go.png" alt=""></div>
+						<script>
+						$( function() {
+						$( "#slider-range" ).slider({
+						range: true,
+						min: 0,
+						max: 9999,
+						values: [ 0, 10000 ],
+						slide: function( event, ui ) {
+						$( "#amount" ).val( "" + ui.values[ 0 ]);
+						$( "#amount_1" ).val( "" + ui.values[ 1 ]);
+						}
+						});
+						$( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", от ) );
+						$( "#amount_1" ).val( "" + $( "#slider-range" ).slider( "values", до ) );
+						} );
+						</script>
+						<script>
+						var menuElem = document.getElementById('sweeties');
+						var titleElem = menuElem.querySelector('.title');
+						titleElem.onclick = function() {
+						menuElem.classList.toggle('open');
+						};
+						</script>
+						<script>
+						button_drop.onclick = function (){
+						var className = informer.className;
+						if( className.indexOf(' expanded') == -1 ){
+						className += ' expanded';
+						}
+						else {
+						className = className.replace(' expanded', '');
+						}
+						informer.className = className;
+						return false;
+						};
+						</script>
+						<script type="text/javascript">
+						$(function() {
+						$(window).scroll(function() {
+						if($(this).scrollTop() != 0) {
+						$('#toTop').fadeIn();
+						
+						} else {
+						$('#toTop').fadeOut();
+						}
+						});
+						
+						$('#toTop').click(function() {
+						$('body,html').animate({scrollTop:0},800);
+						});
+						
+						});
+						</script>
+						<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+						<script type="text/javascript">
+						$(function() {
+						$(window).scroll(function() {
+						if($(this).scrollTop() != 0) {
+						$('#toTop').fadeIn();
+						
+						} else {
+						$('#toTop').fadeOut();
+						}
+						});
+						
+						$('#toTop').click(function() {
+						$('body,html').animate({scrollTop:0},800);
+						});
+						
+						});
+						</script>
+						<script src="js/stepper.min.js"></script>
+					</body>
+				</html>
