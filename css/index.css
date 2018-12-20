@@ -12,6 +12,7 @@ body {
   background: #f6f5fe;
 }
 
+/*Стили для Hedear общие*/
 header {
   width: auto;
   margin: 0 auto;
@@ -298,7 +299,7 @@ header {
 }
 
 #drop {
-  z-index: 1;
+  z-index: 10000;
   width: 181px;
   height: 43px;
   margin-right: 49px;
@@ -320,13 +321,13 @@ header {
 #button_drop .grid {
   position: relative;
   top: 3px;
-  padding: 0 20px 0 20px;
+  padding: 0 21px 0 23px;
 }
 
 .b-toggle {
   opacity: 0;
   max-height: 0;
-  padding: 20px 0 0 20px;
+  padding: 22px 0 0 41px;
   overflow: hidden;
   transition: opacity .3s, max-height .3s;
   display: none;
@@ -336,7 +337,7 @@ header {
 .expanded {
   max-height: 500px;
   transition: opacity .3s, max-height .3s;
-  padding: 22px 0 0 23px;
+  padding: 22px 0 0 41px;
   opacity: 1;
   display: block;
   width: 280px;
@@ -522,6 +523,7 @@ header {
 /*Навигация*/
 .content-nav-overflow {
   border-bottom: 1px solid #ebebeb;
+  overflow: hidden;
 }
 
 .content-nav {
@@ -733,44 +735,27 @@ header {
 }
 
 /*слайдер товаров*/
-.popular-goods #slider {
-  width: 1151px;
+.slick-slider {
+  width: 1150px;
   margin: 0 auto;
-  position: relative;
 }
 
-.popular-goods .inner {
-  width: 210%;
-}
-
-.popular-goods .inner:after {
-  content: '';
-  display: block;
-  height: 0;
-  clear: both;
-}
-
-.popular-goods .page {
-  position: relative;
+.slick-slider .page {
+  min-width: 261px;
   float: left;
-  width: 261px;
-  margin-right: 32.6px;
+  position: relative;
+  margin: 0 10px;
   background: white;
   border: solid 1px #e1e1e1;
   border-radius: 10px;
 }
 
-.popular-goods .page:nth-of-type(8) {
-  margin: 0;
-}
-
-/*блоки с товарами*/
-.popular-goods .page .img-popular-toy {
+.slick-slider .page .img-popular-toy {
   position: relative;
   height: 272px;
 }
 
-.popular-goods .page .new {
+.slick-slider .page .new {
   z-index: 9999;
   position: absolute;
   top: 10px;
@@ -786,7 +771,7 @@ header {
   text-align: center;
 }
 
-.popular-goods .page .price-2 {
+.slick-slider .page .price-2 {
   z-index: 9999;
   position: absolute;
   top: 50px;
@@ -795,7 +780,7 @@ header {
   background-color: #e41428;
 }
 
-.popular-goods .page .name-toy {
+.slick-slider .page .name-toy {
   position: absolute;
   top: 195px;
   margin: 0 30px 0 14px;
@@ -804,25 +789,28 @@ header {
   color: #313131;
 }
 
-.popular-goods .page .image-toy {
+.slick-slider .page .image-toy {
   position: relative;
   top: -5px;
   margin-left: 27px;
 }
 
-.popular-goods .page .image-toy-2 {
-  margin: 33px 0 0 42px;
+.slick-slider .page .image-toy-2 {
+  top: 33px;
+  margin: 0px 0 0 42px;
 }
 
-.popular-goods .page .image-toy-3 {
-  margin: 60px 0 0 25px;
+.slick-slider .page .image-toy-3 {
+  top: 60px;
+  margin: 0px 0 0 25px;
 }
 
-.popular-goods .page .image-toy-4 {
-  margin: 39px 0 0 39px;
+.slick-slider .page .image-toy-4 {
+  top: 39px;
+  margin: 0px 0 0 39px;
 }
 
-.popular-goods .page .star-review {
+.slick-slider .page .star-review {
   display: flex;
   padding: 0 0 7px 0;
   border-top: solid 1px #e1e1e1;
@@ -832,37 +820,37 @@ header {
   color: #cccccc;
 }
 
-.popular-goods .page .star-review .rang {
+.slick-slider .page .star-review .rang {
   margin: 7px 0 0 21px;
 }
 
-.popular-goods .page .star-review .rang span {
+.slick-slider .page .star-review .rang span {
   margin: 1px 0 0 0px;
   top: 0;
 }
 
-.popular-goods .page .star-review .rang span img {
+.slick-slider .page .star-review .rang span img {
   margin: 0;
   top: 0;
 }
 
-.popular-goods .page .star-review .review {
+.slick-slider .page .star-review .review {
   margin: 6px 0 0 0;
   text-align: center;
 }
 
-.popular-goods .page .star-review .review span {
+.slick-slider .page .star-review .review span {
   font-size: 18px;
   font-weight: 600;
   color: #718097;
 }
 
-.popular-goods .page .price-popular-toy {
+.slick-slider .page .price-popular-toy {
   display: flex;
   padding: 0 0 14px 0;
 }
 
-.popular-goods .page .price-popular-toy .old-price {
+.slick-slider .page .price-popular-toy .old-price {
   position: relative;
   margin: 15px 0 0 20px;
   font-family: ProximaNovaRegular;
@@ -870,7 +858,7 @@ header {
   color: #009ae2;
 }
 
-.popular-goods .page .price-popular-toy .old-price::before {
+.slick-slider .page .price-popular-toy .old-price::before {
   position: absolute;
   top: 12px;
   left: 0px;
@@ -881,7 +869,7 @@ header {
   background-color: #009ae2;
 }
 
-.popular-goods .page .price-popular-toy .new-price {
+.slick-slider .page .price-popular-toy .new-price {
   margin: 13px 0 0 28px;
   font-family: ProximaNovaRegular;
   font-size: 24px;
@@ -889,7 +877,7 @@ header {
   font-weight: bold;
 }
 
-.popular-goods .page .button-bask {
+.slick-slider .page .button-bask {
   display: flex;
   padding: 7px 0 9px 0;
   border-radius: 0px 0px 10px 10px;
@@ -900,99 +888,35 @@ header {
   background-image: linear-gradient(9deg, #ff6703, #fc9d0d);
 }
 
-.popular-goods .page .button-bask:hover {
+.slick-slider .page .button-bask:hover {
   box-shadow: 0px 2px 0 0 #e0670c;
   background-image: linear-gradient(9deg, #ff6703, #ff6f04);
 }
 
-.popular-goods .page .button-bask img {
+.slick-slider .page .button-bask img {
   margin: 0 8px 0 40px;
   top: 0;
 }
 
-.popular-goods #overflow {
-  overflow: hidden;
-}
-
-.popular-goods #slider input {
-  display: none;
-}
-
-.popular-goods #controls {
+.slick-slider .slick-prev:before, .slick-slider .slick-next:before {
+  font-size: 35px;
+  background: transparent;
+  color: #ff6703;
   position: absolute;
-  top: 200px;
-  left: 0;
-  height: 50px;
 }
 
-.popular-goods #controls label {
-  display: none;
-  cursor: pointer;
+.slick-slider .slick-prev:before {
+  left: -20px;
 }
 
-.popular-goods #controls label:hover {
-  opacity: 0.8;
+.slick-slider .slick-dots li.slick-active button:before {
+  font-size: 15px;
+  color: #e0670c;
 }
 
-.popular-goods #active {
-  display: none;
-}
-
-/* перелистывание товаров */
-#slide1:checked ~ #controls label:nth-child(2),
-#slide2:checked ~ #controls label:nth-child(3),
-#slide3:checked ~ #controls label:nth-child(4),
-#slide4:checked ~ #controls label:nth-child(5),
-#slide5:checked ~ #controls label:nth-child(1) {
-  position: relative;
-  left: 1179px;
-  width: 25px;
-  height: 25px;
-  background: url(../img/arrow-right.png);
-  float: right;
-  /*в правый угол*/
-  display: block;
-}
-
-#slide1:checked ~ #controls label:nth-child(5),
-#slide2:checked ~ #controls label:nth-child(1),
-#slide3:checked ~ #controls label:nth-child(2),
-#slide4:checked ~ #controls label:nth-child(3),
-#slide5:checked ~ #controls label:nth-child(4) {
-  width: 25px;
-  height: 25px;
-  background: url(../img/arrow.png);
-  float: left;
-  display: block;
-  margin-left: -54px;
-}
-
-#slide1:checked ~ #slides .inner {
-  margin-left: 0;
-}
-
-#slide2:checked ~ #slides .inner {
-  margin-left: -295.6px;
-}
-
-#slide3:checked ~ #slides .inner {
-  margin-left: -591.2px;
-}
-
-#slide4:checked ~ #slides .inner {
-  margin-left: -886.8px;
-}
-
-#slide5:checked ~ #slides .inner {
-  margin-left: -1182.4px;
-}
-
-#slides .inner {
-  transition: all 0.8s ease-in-out;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
+.slick-slider .slick-dots li button:before {
+  font-size: 15px;
+  color: #e0670c;
 }
 
 /*стилизация блока с категориями*/
@@ -1502,40 +1426,6 @@ footer {
   width: 100%;
 }
 
-@media only screen and (min-width: 1170px) and (max-width: 1280px) {
-  /*стрелки для популярных товаров в слайдере*/
-  #slide1:checked ~ #controls label:nth-child(2),
-  #slide2:checked ~ #controls label:nth-child(3),
-  #slide3:checked ~ #controls label:nth-child(4),
-  #slide4:checked ~ #controls label:nth-child(5),
-  #slide5:checked ~ #controls label:nth-child(1) {
-    margin-left: 1155px;
-    left: 0;
-  }
-  #slide1:checked ~ #controls label:nth-child(5),
-  #slide2:checked ~ #controls label:nth-child(1),
-  #slide3:checked ~ #controls label:nth-child(2),
-  #slide4:checked ~ #controls label:nth-child(3),
-  #slide5:checked ~ #controls label:nth-child(4) {
-    margin-left: -31px;
-  }
-  /*стрелки для брендов в слайдере*/
-  #slide1-2:checked ~ #controls label:nth-child(2),
-  #slide2-2:checked ~ #controls label:nth-child(3),
-  #slide3-2:checked ~ #controls label:nth-child(4),
-  #slide4-2:checked ~ #controls label:nth-child(5),
-  #slide5-2:checked ~ #controls label:nth-child(1) {
-    left: 1155px;
-  }
-  #slide1-2:checked ~ #controls label:nth-child(5),
-  #slide2-2:checked ~ #controls label:nth-child(1),
-  #slide3-2:checked ~ #controls label:nth-child(2),
-  #slide4-2:checked ~ #controls label:nth-child(3),
-  #slide5-2:checked ~ #controls label:nth-child(4) {
-    margin-left: -31px;
-  }
-}
-
 @media only screen and (min-width: 1170px) and (max-width: 1268px) {
   #content-overflow {
     overflow: hidden;
@@ -1569,35 +1459,19 @@ footer {
   .popular-goods {
     width: auto;
     max-width: 1268px;
+    overflow: hidden;
   }
-  .popular-goods .page {
-    margin-right: 15px;
+  .slick-slider {
+    width: 1100px;
   }
-  .popular-goods #slider {
-    width: 1097px;
+  .slick-slider .page {
+    margin: 0 5px;
   }
-  #slide1:checked ~ #slides .inner {
-    margin-left: 0;
+  .slick-slider .slick-prev:before {
+    left: -10px;
   }
-  #slide2:checked ~ #slides .inner {
-    margin-left: -278px;
-  }
-  #slide3:checked ~ #slides .inner {
-    margin-left: -556px;
-  }
-  #slide4:checked ~ #slides .inner {
-    margin-left: -834px;
-  }
-  #slide5:checked ~ #slides .inner {
-    margin-left: -1112px;
-  }
-  #slide1:checked ~ #controls label:nth-child(2),
-  #slide2:checked ~ #controls label:nth-child(3),
-  #slide3:checked ~ #controls label:nth-child(4),
-  #slide4:checked ~ #controls label:nth-child(5),
-  #slide5:checked ~ #controls label:nth-child(1) {
-    margin-left: 1103px;
-    left: 0;
+  .slick-slider .slick-next:before {
+    left: -5px;
   }
   .toy-brands {
     width: auto;
@@ -1775,6 +1649,53 @@ footer {
     width: 100%;
     margin: 0 15px 0 15px;
   }
+  .popular-goods {
+    width: 100%;
+  }
+  .slick-slider {
+    width: 1000px;
+  }
+  .slick-slider .page {
+    width: 11.95%;
+    margin: 0 5px;
+    min-width: auto;
+  }
+  .slick-slider .page .image-toy-3 {
+    margin: 0px auto;
+  }
+  .slick-slider .page .name-toy {
+    top: 185px;
+  }
+  .slick-slider .page .star-review {
+    padding: 0 5%;
+  }
+  .slick-slider .page .star-review .rang {
+    margin-left: 0;
+  }
+  .slick-slider .page .star-review .rang span img {
+    width: 85%;
+  }
+  .slick-slider .page .star-review .review {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  .slick-slider .page .price-popular-toy {
+    padding: 3% 3%;
+  }
+  .slick-slider .page .price-popular-toy .old-price {
+    margin: 1% 0 0 0;
+  }
+  .slick-slider .page .price-popular-toy .new-price {
+    margin: 0 0 0 auto;
+  }
+  .slick-slider .page .button-bask {
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+  .slick-slider .page .button-bask img {
+    margin-left: 0;
+  }
   .toys-stock {
     width: 100%;
     margin: 0 auto 50px auto;
@@ -1815,6 +1736,84 @@ footer {
   }
   .toys-stock-2 .toy-button-2 {
     font-size: 1.28vw;
+  }
+}
+
+@media only screen and (min-width: 970px) and (max-width: 1100px) {
+  .slick-slider {
+    width: 900px;
+  }
+  .slick-slider .page {
+    width: 11.95%;
+    margin: 0 5px;
+    min-width: auto;
+  }
+  .slick-slider .page .img-popular-toy {
+    height: 250px;
+  }
+  .slick-slider .page .new {
+    width: 75px;
+  }
+  .slick-slider .page .price-2 {
+    top: 45px;
+    width: 45px;
+  }
+  .slick-slider .page .image-toy {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .slick-slider .page .image-toy-3 {
+    margin: 0px auto;
+  }
+  .slick-slider .page .name-toy {
+    top: 160px;
+    font-size: 15px;
+  }
+  .slick-slider .page .star-review {
+    padding: 0 5%;
+  }
+  .slick-slider .page .star-review .rang {
+    margin-left: 0;
+  }
+  .slick-slider .page .star-review .rang span img {
+    width: 85%;
+  }
+  .slick-slider .page .star-review .review {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  .slick-slider .page .price-popular-toy {
+    padding: 3% 3%;
+  }
+  .slick-slider .page .price-popular-toy .old-price {
+    margin: 1% 0 0 0;
+    font-size: 16px;
+  }
+  .slick-slider .page .price-popular-toy .old-price::before {
+    top: 40%;
+    width: 100%;
+  }
+  .slick-slider .page .price-popular-toy .new-price {
+    margin: 0 0 0 auto;
+    font-size: 22px;
+  }
+  .slick-slider .page .button-bask {
+    padding-left: 10%;
+    padding-right: 5%;
+    font-size: 15px;
+  }
+  .slick-slider .page .button-bask img {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 970px) and (max-width: 1100px) {
+  .slick-slider .slick-next {
+    right: -5px;
+  }
+  .slick-slider .slick-prev:before {
+    right: -20px;
   }
 }
 
@@ -1881,97 +1880,6 @@ footer {
   }
   .dws-menu .menu {
     line-height: 1.9;
-  }
-}
-
-@media only screen and (min-width: 970px) and (max-width: 1170px) {
-  .popular-goods {
-    width: auto;
-    max-width: 1170px;
-    margin-bottom: 60px;
-  }
-  .popular-goods .page {
-    width: 9.5%;
-    margin-right: 15px;
-  }
-  .popular-goods .page .new {
-    font-size: 1.37vw;
-  }
-  .popular-goods .page .name-toy {
-    font-size: 1.30vw;
-    top: 67%;
-    margin: 0 13px 0 13px;
-  }
-  .popular-goods .page .star-review .rang {
-    margin-left: 6%;
-  }
-  .popular-goods .page .star-review .rang span img {
-    width: 70%;
-    display: block;
-  }
-  .popular-goods .page .star-review .review span {
-    display: block;
-    font-size: 1.54vw;
-  }
-  .popular-goods .page .star-review .review {
-    margin-left: 15%;
-  }
-  .popular-goods .page .price-popular-toy .old-price {
-    font-size: 1.39vw;
-    margin-left: 7%;
-  }
-  .popular-goods .page .price-popular-toy .old-price::before {
-    top: 40%;
-    width: 100%;
-  }
-  .popular-goods .page .price-popular-toy .new-price {
-    font-size: 2.05vw;
-    margin-left: 5%;
-  }
-  .popular-goods .page .button-bask img {
-    margin-left: 9%;
-  }
-  .popular-goods .page .img-popular-toy {
-    height: 240px;
-  }
-  .popular-goods .page .image-toy {
-    width: 75%;
-  }
-  .popular-goods #slider {
-    width: 902px;
-  }
-  .popular-goods .inner {
-    width: 2215px;
-  }
-  #slide1:checked ~ #slides .inner {
-    margin-left: 0;
-  }
-  #slide2:checked ~ #slides .inner {
-    margin-left: -25%;
-  }
-  #slide3:checked ~ #slides .inner {
-    margin-left: -50%;
-  }
-  #slide4:checked ~ #slides .inner {
-    margin-left: -75%;
-  }
-  #slide5:checked ~ #slides .inner {
-    margin-left: -100%;
-  }
-  #slide1:checked ~ #controls label:nth-child(2),
-  #slide2:checked ~ #controls label:nth-child(3),
-  #slide3:checked ~ #controls label:nth-child(4),
-  #slide4:checked ~ #controls label:nth-child(5),
-  #slide5:checked ~ #controls label:nth-child(1) {
-    margin-left: 0;
-    left: 1750%;
-  }
-  #slide1:checked ~ #controls label:nth-child(5),
-  #slide2:checked ~ #controls label:nth-child(1),
-  #slide3:checked ~ #controls label:nth-child(2),
-  #slide4:checked ~ #controls label:nth-child(3),
-  #slide5:checked ~ #controls label:nth-child(4) {
-    margin-left: -60%;
   }
 }
 
@@ -2460,7 +2368,6 @@ footer {
     margin-right: 0;
   }
   #button_drop {
-    width: 160px;
     height: 38px;
     font-size: 1.7vw;
   }
@@ -2567,105 +2474,88 @@ footer {
   }
   .headline {
     width: 100%;
-    font-size: 3.3vw;
   }
-  .popular-goods {
-    width: auto;
-    max-width: 1170px;
-    margin-bottom: 5%;
+  .slick-slider {
+    width: 100%;
   }
-  .popular-goods .page {
-    width: 9.5%;
-    margin-right: 0.5%;
+  .slick-slider .page {
+    width: 11.95%;
+    margin: 0 5px;
+    min-width: auto;
   }
-  .popular-goods .page .new {
-    width: 30%;
-    font-size: 15px;
+  .slick-slider .page .img-popular-toy {
+    height: 60vh;
   }
-  .popular-goods .page .price-2 {
-    width: 20%;
+  .slick-slider .page .new {
+    width: 75px;
   }
-  .popular-goods .page .name-toy {
-    font-size: 15px;
-    top: 67%;
-    margin: 0 13px 0 13px;
+  .slick-slider .page .price-2 {
+    top: 45px;
+    width: 45px;
   }
-  .popular-goods .page .star-review .rang {
-    margin-left: 6%;
+  .slick-slider .page .image-toy {
+    width: 75%;
+    margin: 0 auto;
   }
-  .popular-goods .page .star-review .rang span img {
-    width: 70%;
-    display: block;
+  .slick-slider .page .image-toy-3 {
+    margin: 0px auto;
   }
-  .popular-goods .page .star-review .review span {
-    display: block;
-    font-size: 1.54vw;
+  .slick-slider .page .name-toy {
+    top: 40vh;
+    font-size: 1.6vw;
+    margin: 0 5%;
   }
-  .popular-goods .page .star-review .review {
-    margin-left: 15%;
+  .slick-slider .page .star-review {
+    padding: 0 5%;
   }
-  .popular-goods .page .price-popular-toy .old-price {
-    font-size: 16px;
-    margin-left: 4%;
+  .slick-slider .page .star-review .rang {
+    margin-left: 0;
   }
-  .popular-goods .page .price-popular-toy .old-price::before {
+  .slick-slider .page .star-review .rang span img {
+    width: 85%;
+  }
+  .slick-slider .page .star-review .review {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  .slick-slider .page .price-popular-toy {
+    padding: 3% 3%;
+  }
+  .slick-slider .page .price-popular-toy .old-price {
+    margin: 1% 0 0 0;
+    font-size: 1.7vw;
+  }
+  .slick-slider .page .price-popular-toy .old-price::before {
     top: 40%;
     width: 100%;
   }
-  .popular-goods .page .price-popular-toy .new-price {
-    font-size: 22px;
-    margin-left: 7%;
+  .slick-slider .page .price-popular-toy .new-price {
+    margin: 0 0 0 auto;
+    font-size: 2.2vw;
   }
-  .popular-goods .page .button-bask {
-    font-size: 16px;
-    padding: 4% 0 3% 0;
+  .slick-slider .page .button-bask {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.6vw;
   }
-  .popular-goods .page .button-bask img {
-    position: relative;
-    top: -3px;
-    margin: 0 4% 0 7%;
-  }
-  .popular-goods .page .img-popular-toy {
-    height: 240px;
-  }
-  .popular-goods .page .image-toy {
-    width: 75%;
-  }
-  .popular-goods #slider {
-    width: 670px;
-  }
-  .popular-goods .inner {
-    width: 2215px;
-  }
-  #slide1:checked ~ #slides .inner {
+  .slick-slider .page .button-bask img {
     margin-left: 0;
   }
-  #slide2:checked ~ #slides .inner {
-    margin-left: -33%;
+  .slick-slider .slick-prev, .slick-slider .slick-next {
+    display: none;
   }
-  #slide3:checked ~ #slides .inner {
-    margin-left: -66%;
+  .slick-slider .slick-prev:before, .slick-slider .slick-next:before {
+    display: none;
   }
-  #slide4:checked ~ #slides .inner {
-    margin-left: -99%;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 970px) {
+  .slick-slider .page .img-popular-toy {
+    height: 58vh;
   }
-  #slide5:checked ~ #slides .inner {
-    margin-left: -132%;
-  }
-  #slide1:checked ~ #controls label:nth-child(2),
-  #slide2:checked ~ #controls label:nth-child(3),
-  #slide3:checked ~ #controls label:nth-child(4),
-  #slide4:checked ~ #controls label:nth-child(5),
-  #slide5:checked ~ #controls label:nth-child(1) {
-    margin-left: 0;
-    left: 1280%;
-  }
-  #slide1:checked ~ #controls label:nth-child(5),
-  #slide2:checked ~ #controls label:nth-child(1),
-  #slide3:checked ~ #controls label:nth-child(2),
-  #slide4:checked ~ #controls label:nth-child(3),
-  #slide5:checked ~ #controls label:nth-child(4) {
-    margin-left: -60%;
+  .slick-slider .page .name-toy {
+    font-size: 1.8vw;
   }
 }
 
@@ -3297,223 +3187,119 @@ footer {
   .headline {
     width: 100%;
     font-size: 5.3vw;
-    margin: 0 auto 5% auto;
   }
-  .popular-goods {
-    width: auto;
-    max-width: 1170px;
-    margin-bottom: 10%;
-  }
-  .popular-goods .page {
-    width: 8%;
-    margin-right: 0.5%;
-  }
-  .popular-goods .page .new {
-    width: 25%;
-    font-size: 1.5vw;
-    height: 20px;
-  }
-  .popular-goods .page .price-2 {
-    width: 20%;
-    top: 40px;
-  }
-  .popular-goods .page .name-toy {
-    font-size: 13px;
-    top: 60%;
-    margin: 0 13px 0 13px;
-  }
-  .popular-goods .page .star-review .rang {
-    margin-left: 6%;
-  }
-  .popular-goods .page .star-review .rang span img {
-    width: 70%;
-    display: block;
-  }
-  .popular-goods .page .star-review .review span {
-    display: block;
-    font-size: 2.54vw;
-  }
-  .popular-goods .page .star-review .review {
-    margin-left: 0;
-  }
-  .popular-goods .page .price-popular-toy .old-price {
-    font-size: 14px;
-    margin: 9px 0 0 4%;
-  }
-  .popular-goods .page .price-popular-toy .old-price::before {
-    top: 50%;
+  .slick-slider {
     width: 100%;
   }
-  .popular-goods .page .price-popular-toy .new-price {
-    font-size: 18px;
-    margin: 6px 0 0 20px;
-  }
-  .popular-goods .page .price-popular-toy {
-    padding: 0 0 5px 0;
-  }
-  .popular-goods .page .button-bask {
-    font-size: 13px;
-    padding: 4% 0 3% 0;
-  }
-  .popular-goods .page .button-bask img {
-    position: relative;
-    top: -3px;
-    margin: 0 4% 0 7%;
-  }
-  .popular-goods .page .img-popular-toy {
-    height: 190px;
-  }
-  .popular-goods .page .image-toy {
-    width: 65%;
-    margin-left: 40px;
-  }
-  .popular-goods .page .image-toy-2 {
-    width: 58%;
-    margin: 23px 0 0 50px;
-  }
-  .popular-goods #slider {
-    width: 570px;
-  }
-  .popular-goods .inner {
-    width: 2215px;
-  }
-  .popular-goods #controls {
-    display: none;
-    top: 130px;
-  }
-  .popular-goods #active {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-  }
-  .popular-goods #active label {
-    display: block;
-    width: 14px;
-    height: 14px;
+  .slick-slider .page {
+    width: 15%;
     margin: 0 5px;
-    cursor: pointer;
-    border: 2px solid #ff6703;
-    border-radius: 50%;
-    background: white;
+    min-width: auto;
   }
-  #slide1:checked ~ #active label:nth-child(1), #slide2:checked ~ #active label:nth-child(2), #slide3:checked ~ #active label:nth-child(3), #slide4:checked ~ #active label:nth-child(4), #slide5:checked ~ #active label:nth-child(5) {
-    background: #ff6703;
+  .slick-slider .page .img-popular-toy {
+    height: 53vh;
   }
-  #slide1:checked ~ #slides .inner {
+  .slick-slider .page .new {
+    width: 8vw;
+    height: 5vh;
+    font-size: 1.6vw;
+  }
+  .slick-slider .page .price-2 {
+    top: 36px;
+    width: 5vw;
+  }
+  .slick-slider .page .image-toy {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .slick-slider .page .image-toy-3 {
+    margin: 0px auto;
+  }
+  .slick-slider .page .name-toy {
+    top: 40vh;
+    font-size: 2vw;
+    margin: 0 5%;
+  }
+  .slick-slider .page .star-review {
+    padding: 0 5%;
+  }
+  .slick-slider .page .star-review .rang {
     margin-left: 0;
   }
-  #slide2:checked ~ #slides .inner {
-    margin-left: -34%;
+  .slick-slider .page .star-review .rang span img {
+    width: 85%;
   }
-  #slide3:checked ~ #slides .inner {
-    margin-left: -68%;
+  .slick-slider .page .star-review .review {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
   }
-  #slide4:checked ~ #slides .inner {
-    margin-left: -102%;
+  .slick-slider .page .price-popular-toy {
+    padding: 3% 3%;
   }
-  #slide5:checked ~ #slides .inner {
-    margin-left: -136%;
+  .slick-slider .page .price-popular-toy .old-price {
+    margin: 1% 0 0 0;
+    font-size: 2.1vw;
+  }
+  .slick-slider .page .price-popular-toy .old-price::before {
+    top: 40%;
+    width: 100%;
+  }
+  .slick-slider .page .price-popular-toy .new-price {
+    margin: 0 0 0 auto;
+    font-size: 3vw;
+  }
+  .slick-slider .page .button-bask {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 2.2vw;
+  }
+  .slick-slider .page .button-bask p {
+    line-height: 2;
+  }
+  .slick-slider .page .button-bask img {
+    margin-left: 0;
+  }
+  .slick-slider .slick-prev, .slick-slider .slick-next {
+    display: none;
+  }
+  .slick-slider .slick-prev:before, .slick-slider .slick-next:before {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  .popular-goods #slider {
-    width: 495px;
+  .slick-slider .page .name-toy {
+    top: 30vh;
+    font-size: 2.4vw;
   }
-  .popular-goods .page {
-    width: 7%;
-  }
-  .popular-goods .page .img-popular-toy {
-    height: 160px;
-  }
-  .popular-goods .page .new {
-    width: 35%;
+  .slick-slider .page .button-bask {
+    padding-top: 2px;
+    padding-bottom: 2px;
     font-size: 2vw;
   }
-  .popular-goods .page .price-2 {
-    width: 25%;
+  .slick-slider .page .image-toy-3 {
+    top: 10vh;
   }
-  .popular-goods .page .name-toy {
-    top: 60%;
-    font-size: 11px;
-  }
-  .popular-goods .page .star-review .rang {
-    width: 70%;
-    font-size: 8px;
-  }
-  .popular-goods .page .star-review .review {
-    font-size: 8px;
-  }
-  .popular-goods .page .star-review .review span {
-    font-size: 2.3vw;
-  }
-  .popular-goods .page .star-review .rang span img {
-    width: 65%;
-    margin-top: 3px;
-  }
-  .popular-goods .page .price-popular-toy .old-price {
-    font-size: 12px;
-  }
-  .popular-goods .page .price-popular-toy .old-price::before {
-    top: 45%;
-  }
-  .popular-goods .page .price-popular-toy .new-price {
-    font-size: 15px;
-  }
-  .popular-goods .page .button-bask {
-    font-size: 11px;
-    line-height: 2;
+  .slick-slider .page .image-toy-2 {
+    top: 5vh;
   }
 }
 
 @media only screen and (max-width: 510px) {
-  .popular-goods #slider {
-    width: 430px;
+  .slick-slider .page .new {
+    top: 1.7vh;
+    height: 4vh;
+    font-size: 1.9vw;
   }
-  .popular-goods .page .image-toy {
-    width: 60%;
-    top: 0;
+  .slick-slider .page .price-2 {
+    top: 7.5vh;
   }
-  .popular-goods .page {
-    width: 6%;
+  .slick-slider .page .name-toy {
+    font-size: 2.4vw;
   }
-  .popular-goods .page .img-popular-toy {
-    height: 150px;
-  }
-  .popular-goods .page .image-toy-2 {
-    margin: 15px 0 0 40px;
-  }
-  .popular-goods .page .image-toy-3 {
-    margin: 30px 0 0 40px;
-  }
-  .popular-goods .page .new {
-    width: 35%;
-    font-size: 2vw;
-  }
-  .popular-goods .page .price-2 {
-    width: 25%;
-  }
-  .popular-goods .page .name-toy {
-    top: 53%;
-    font-size: 11px;
-  }
-  .popular-goods .page .price-popular-toy .old-price {
-    font-size: 10px;
-  }
-  .popular-goods .page .price-popular-toy .old-price::before {
-    top: 45%;
-  }
-  .popular-goods .page .price-popular-toy .new-price {
-    font-size: 13px;
-  }
-  .popular-goods .page .button-bask img {
-    width: 15%;
-    height: 100%;
-    margin-left: 1%;
-  }
-  .popular-goods .page .button-bask {
-    font-size: 11px;
-    line-height: 2;
+  .slick-slider .page .img-popular-toy {
+    height: 48vh;
   }
 }
 
@@ -3861,71 +3647,24 @@ footer {
   .headline {
     font-size: 5.3vw;
   }
-  .popular-goods #slider {
-    width: 404px;
+  .slick-slider .page .img-popular-toy {
+    height: 42vh;
   }
-  .popular-goods .page {
-    margin-right: 0.1%;
+  .slick-slider .page .name-toy {
+    top: 26vh;
   }
-  .popular-goods .page .image-toy {
-    width: 60%;
-    top: 0;
+  .slick-slider .page .star-review .review span {
+    font-size: 3vw;
   }
-  .popular-goods .page {
-    width: 5.9%;
+  .slick-slider .page .price-popular-toy .old-price::before {
+    top: 30%;
   }
-  .popular-goods .page .img-popular-toy {
-    height: 150px;
+  .slick-slider .page .button-bask {
+    font-size: 2.2vw;
   }
-  .popular-goods .page .image-toy-2 {
-    margin: 15px 0 0 40px;
-  }
-  .popular-goods .page .image-toy-3 {
-    margin: 30px 0 0 40px;
-  }
-  .popular-goods .page .new {
-    width: 35%;
-    font-size: 2vw;
-  }
-  .popular-goods .page .price-2 {
-    width: 25%;
-  }
-  .popular-goods .page .name-toy {
-    top: 53%;
-    font-size: 11px;
-  }
-  .popular-goods .page .price-popular-toy .old-price {
-    font-size: 10px;
-  }
-  .popular-goods .page .price-popular-toy .old-price::before {
-    top: 45%;
-  }
-  .popular-goods .page .price-popular-toy .new-price {
-    font-size: 13px;
-  }
-  .popular-goods .page .button-bask img {
+  .slick-slider .page .button-bask img {
     width: 15%;
     height: 100%;
-    margin-left: 1%;
-  }
-  .popular-goods .page .button-bask {
-    font-size: 11px;
-    line-height: 2;
-  }
-  #slide1:checked ~ #slides .inner {
-    margin-left: 0;
-  }
-  #slide2:checked ~ #slides .inner {
-    margin-left: -33.1%;
-  }
-  #slide3:checked ~ #slides .inner {
-    margin-left: -66.5%;
-  }
-  #slide4:checked ~ #slides .inner {
-    margin-left: -100%;
-  }
-  #slide5:checked ~ #slides .inner {
-    margin-left: -133.3%;
   }
   .purchase-benefits .purchase div p {
     font-size: 3.5vw;
@@ -3991,104 +3730,28 @@ footer {
   }
 }
 
-@media only screen and (max-width: 420px) {
-  .popular-goods #slider {
-    width: 344px;
+@media only screen and (max-width: 415px) {
+  .slick-slider .page .name-toy {
+    top: 24vh;
   }
-  .popular-goods .page {
-    width: 5%;
-  }
-  .popular-goods .page .img-popular-toy {
-    height: 125px;
-  }
-  .popular-goods .page .image-toy {
-    margin-left: 30px;
-  }
-  .popular-goods .page .image-toy-2 {
-    margin: 8px 0 0 40px;
-  }
-  .popular-goods .page .image-toy-3 {
-    margin: 23px 0 0 40px;
-  }
-  .popular-goods .page .image-toy-4 {
-    margin: 11px 0 0 39px;
-  }
-  .popular-goods .page .new {
-    top: 5px;
-    width: 35%;
-    height: 16px;
-    font-size: 2.2vw;
-  }
-  .popular-goods .page .price-2 {
-    top: 30px;
-    height: 12px;
-    padding-top: 3px;
-  }
-  .popular-goods .page .price-2 {
-    width: 25%;
-  }
-  .popular-goods .page .name-toy {
-    top: 52%;
-    font-size: 9px;
-  }
-  .popular-goods .page .star-review .rang {
-    width: 65%;
-    font-size: 7px;
-  }
-  .popular-goods .page .star-review .review {
-    font-size: 7px;
-  }
-  .popular-goods .page .star-review .review span {
+  .slick-slider .page .button-bask {
     font-size: 2vw;
-  }
-  .popular-goods .page .star-review .rang span img {
-    width: 65%;
-    margin-top: 3px;
-  }
-  .popular-goods .page .price-popular-toy .old-price {
-    font-size: 9px;
-  }
-  .popular-goods .page .price-popular-toy .old-price::before {
-    top: 45%;
-  }
-  .popular-goods .page .price-popular-toy .new-price {
-    font-size: 12px;
-    margin-left: auto;
-  }
-  .popular-goods .page .button-bask img {
-    top: 0;
-    width: 12%;
-  }
-  .popular-goods .page .button-bask {
-    font-size: 9px;
-    line-height: 2;
   }
 }
 
-@media only screen and (max-width: 350px) {
-  .popular-goods #slider {
-    width: 229px;
+@media only screen and (max-width: 370px) {
+  .slick-slider .page .name-toy {
+    top: 31vh;
+    font-size: 2.9vw;
   }
-  #slide1:checked ~ #slides .inner {
-    margin-left: 0;
+  .slick-slider .page .price-popular-toy .old-price {
+    font-size: 3vw;
   }
-  #slide2:checked ~ #slides .inner {
-    margin-left: -50%;
+  .slick-slider .page .price-popular-toy .new-price {
+    font-size: 4vw;
   }
-  #slide3:checked ~ #slides .inner {
-    margin-left: -100%;
-  }
-  #slide4:checked ~ #slides .inner {
-    margin-left: -150%;
-  }
-  #slide5:checked ~ #slides .inner {
-    margin-left: -200%;
-  }
-  .hidden-menu-ticker:checked ~ .btn-menu-copy {
-    z-index: 10003;
-    top: 2%;
-    left: 48%;
-    right: auto;
+  .slick-slider .page .button-bask {
+    font-size: 3vw;
   }
 }
 

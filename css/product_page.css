@@ -2115,7 +2115,6 @@ footer {
     margin-right: 0;
   }
   #button_drop {
-    width: 160px;
     height: 38px;
     font-size: 1.7vw;
   }
@@ -2704,11 +2703,11 @@ footer {
     font-size: 4vw;
   }
   .price-amount .button-bask {
-    top: 43vh;
+    top: 50vh;
     left: 15%;
   }
   .buy-one-clik {
-    top: 43vh;
+    top: 50vh;
     right: 15%;
     left: auto;
   }
@@ -3359,13 +3358,13 @@ footer {
     height: 60px;
   }
   .price-amount .button-bask {
-    top: 35vh;
+    top: 42vh;
     left: 10%;
     height: 9vh;
     font-size: 4vw;
   }
   .buy-one-clik {
-    top: 35vh;
+    top: 42vh;
     right: 10%;
     width: 35vw;
     height: 9vh;
