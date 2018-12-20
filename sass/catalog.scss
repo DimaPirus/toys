@@ -271,7 +271,7 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.header-info-centre div { margin-top: 8px; }
 	.header-nav { height: auto; max-height: 43px; padding: 1px 15px 0 15px; }
 	.dws-menu { width: 75%; }
-	.dws-menu > ul li a { margin: 0; font-size: 1.50vw; line-height: 2.25; padding: 0px 14% 0px 14%; white-space: nowrap}
+	.dws-menu > ul li a { margin: 0; font-size: 1.50vw; line-height: 2.25; padding: 0px 12.5% 0px 12.5%; white-space: nowrap}
 	.dws-menu li > ul li a { font-size: 1.37vw; }
 	#drop { height: 43px; margin-right: 3%; }
 	#button_drop { height: 43px; }
@@ -410,10 +410,11 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 }
 @media only screen and (min-width:750px) and (max-width:970px){
 	.header-info-centre .burger-menu { width: 52px; height: 35px; margin-left: 10%; padding:3px 38px 2px 3px; border-radius: 50%; background: white; }
-	.btn-menu { color: #fff; background: transparent; padding: 5px; position: absolute; cursor: pointer; transition: left .23s; z-index: 3; width: 25px; -webkit-transform: translateZ(0); -webkit-backface-visibility: hidden;}
+	.btn-menu { color: #fff; background: transparent; padding: 5px; position: absolute; cursor: pointer; transition: left .23s; z-index: 10005; width: 25px; -webkit-transform: translateZ(0); -webkit-backface-visibility: hidden;}
 	.btn-menu span { display: block; height: 3px; background-color: black; margin: 0px 0 4px 0; transition: all .1s linear .23s; position: relative;}
 	.btn-menu span.first { margin-top: 4px;}
 	.hidden-menu-ticker:checked ~ .btn-menu { top: 0px; }
+		.hidden-menu-ticker:checked ~ .btn-menu-copy { left: 214px; top: 0.5%; position: fixed;  }
 	.hidden-menu-ticker:checked ~ .hidden-menu { left: 0;}
 	.hidden-menu-ticker:checked ~ .btn-menu span.first { -webkit-transform: rotate(45deg); top: 10px;}
 	.hidden-menu-ticker:checked ~ .btn-menu span.second { opacity: 0;}

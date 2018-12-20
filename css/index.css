@@ -516,6 +516,7 @@ header {
 
 /*CONTENT*/
 #content-overflow {
+  overflow: hidden;
   width: auto;
   margin: 0 auto;
 }
@@ -545,6 +546,7 @@ header {
 
 /*Основной контент страницы*/
 .content {
+  overflow: hidden;
   width: auto;
   margin: 0 auto;
 }
@@ -917,6 +919,10 @@ header {
 .slick-slider .slick-dots li button:before {
   font-size: 15px;
   color: #e0670c;
+}
+
+.slick-slider .slick-dots {
+  bottom: -50px;
 }
 
 /*стилизация блока с категориями*/
@@ -1528,7 +1534,7 @@ footer {
     margin: 0;
     font-size: 1.50vw;
     line-height: 2.25;
-    padding: 0px 14% 0px 14%;
+    padding: 0px 12.5% 0px 12.5%;
     white-space: nowrap;
   }
   .dws-menu li > ul li a {
@@ -2071,9 +2077,6 @@ footer {
     padding: 5px 3% 6px 3%;
     font-size: 2vw;
   }
-  .dws-menu .dropmenu {
-    margin: 0 0 0 auto;
-  }
   .dws-menu li ul {
     left: -100px;
   }
@@ -2097,7 +2100,7 @@ footer {
     height: 100%;
     left: -250px;
     transition: left .2s;
-    z-index: 2;
+    z-index: 10003;
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
     text-transform: uppercase;
@@ -2233,7 +2236,7 @@ footer {
     position: absolute;
     cursor: pointer;
     transition: left .23s;
-    z-index: 3;
+    z-index: 10005;
     width: 25px;
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
@@ -2251,6 +2254,11 @@ footer {
   }
   .hidden-menu-ticker:checked ~ .btn-menu {
     top: 0px;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu-copy {
+    left: 214px;
+    top: 0.5%;
+    position: fixed;
   }
   .hidden-menu-ticker:checked ~ .hidden-menu {
     left: 0;

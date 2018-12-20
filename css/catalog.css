@@ -1555,7 +1555,7 @@ footer {
     margin: 0;
     font-size: 1.50vw;
     line-height: 2.25;
-    padding: 0px 14% 0px 14%;
+    padding: 0px 12.5% 0px 12.5%;
     white-space: nowrap;
   }
   .dws-menu li > ul li a {
@@ -2019,7 +2019,7 @@ footer {
     position: absolute;
     cursor: pointer;
     transition: left .23s;
-    z-index: 3;
+    z-index: 10005;
     width: 25px;
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
@@ -2037,6 +2037,11 @@ footer {
   }
   .hidden-menu-ticker:checked ~ .btn-menu {
     top: 0px;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu-copy {
+    left: 214px;
+    top: 0.5%;
+    position: fixed;
   }
   .hidden-menu-ticker:checked ~ .hidden-menu {
     left: 0;

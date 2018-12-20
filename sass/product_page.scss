@@ -270,7 +270,7 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.header-info-centre div { margin-top: 8px; }
 	.header-nav { height: auto; max-height: 43px; padding: 1px 15px 0 15px; }
 	.dws-menu { width: 75%; }
-	.dws-menu > ul li a { margin: 0; font-size: 1.50vw; line-height: 2.25; padding: 0px 14% 0px 14%; white-space: nowrap}
+	.dws-menu > ul li a { margin: 0; font-size: 1.50vw; line-height: 2.25; padding: 0px 12.5% 0px 12.5%; white-space: nowrap}
 	.dws-menu li > ul li a { font-size: 1.37vw; }
 	#drop { height: 43px; margin-right: 3%; }
 	#button_drop { height: 43px; }
@@ -431,10 +431,11 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 }
 @media only screen and (min-width:750px) and (max-width:970px){
 	.header-info-centre .burger-menu { width: 52px; height: 35px; margin-left: 10%; padding:3px 38px 2px 3px; border-radius: 50%; background: white; }
-	.btn-menu { color: #fff; background: transparent; padding: 5px; position: absolute; cursor: pointer; transition: left .23s; z-index: 3; width: 25px; -webkit-transform: translateZ(0); -webkit-backface-visibility: hidden;}
+	.btn-menu { color: #fff; background: transparent; padding: 5px; position: absolute; cursor: pointer; transition: left .23s; z-index: 10005; width: 25px; -webkit-transform: translateZ(0); -webkit-backface-visibility: hidden;}
 	.btn-menu span { display: block; height: 3px; background-color: black; margin: 0px 0 4px 0; transition: all .1s linear .23s; position: relative;}
 	.btn-menu span.first { margin-top: 4px;}
 	.hidden-menu-ticker:checked ~ .btn-menu { top: 0px; }
+		.hidden-menu-ticker:checked ~ .btn-menu-copy { left: 214px; top: 0.5%; position: fixed;  }
 	.hidden-menu-ticker:checked ~ .hidden-menu { left: 0;}
 	.hidden-menu-ticker:checked ~ .btn-menu span.first { -webkit-transform: rotate(45deg); top: 10px;}
 	.hidden-menu-ticker:checked ~ .btn-menu span.second { opacity: 0;}
@@ -452,7 +453,7 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.page-text { margin: 3% auto 0 auto; text-align: justify; }
 	.product-tabs { width: 100%; }
 	.tabs .tab-content { width: 94%; padding: 3%; }
-	.tabs:after { height: 75vh; }
+	.tabs:after { height: 80vh; }
 	.similar-goods-wrap { width: 100%; }
 	.similar-goods .product-still div:nth-of-type(3) { display: none; }
 	.similar-goods .product-still .product div:nth-of-type(3) { display: flex; }
@@ -657,7 +658,7 @@ footer { width: auto; background-color: rgb(61, 63, 87); }
 	.product-still { width: 100%; margin: 3% 0 0 0; }
 	.product-still label{ position: relative; z-index: 20; display: block; width: 100%; margin-bottom: 2%; border: 1px solid rgb(110, 106, 142); border-radius: 5px; cursor: pointer; font-family: MontserratMedium; font-size: 18px; font-weight: 500; line-height: 3; letter-spacing: 0.5px; text-align: center; color: rgb(110, 106, 142); }
 	.product-still label:hover:after,
-	.product-still input[title]:checked + label:hover:after{ content: ''; position: absolute; width: 24px; height: 24px; right: 13px; top: 7px; }
+	.product-still input[title]:checked + label:hover:after{ content: ''; position: absolute; width: 24px; height: 24px; right: 13px; top: 7px;}
 	.product-still input[title]{ display: none; }
 	.product-still .similar-goods-still{ margin-top: -1px; overflow: hidden; height: 0; position: relative; z-index: 10; transition: height 0.3s ease-in-out, box-shadow 0.6s linear; }
 	.product-still input[title]:checked ~ .similar-goods-still{ transition: height 0.5s ease-in-out, box-shadow 0.1s linear; }
