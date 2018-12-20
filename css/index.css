@@ -994,31 +994,15 @@ header {
   margin: 0 auto 88px auto;
 }
 
-.toy-brands #slider {
-  width: 1166.1px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.toy-brands .inner {
-  width: 200%;
-}
-
-.toy-brands .inner:after {
-  content: '';
-  display: block;
-  height: 0;
-  clear: both;
-}
-
-.toy-brands .page:hover {
+.toy-brands .sl-brand a .page:hover {
   border: 1px solid #c8c8c8;
 }
 
-.toy-brands .page {
+.toy-brands .sl-brand a .page {
   position: relative;
   float: left;
   width: 164px;
+  min-width: auto;
   height: 162px;
   margin-right: 30px;
   background: white;
@@ -1026,114 +1010,32 @@ header {
   border-radius: 10px;
 }
 
-.toy-brands a:nth-of-type(1) .page img, .toy-brands a:nth-of-type(7) .page img {
+.toy-brands .sl-brand a:nth-of-type(1) .page img, .toy-brands a:nth-of-type(7) .page img {
   margin: 11px 0 0 3px;
 }
 
-.toy-brands a:nth-of-type(2) .page img, .toy-brands a:nth-of-type(8) .page img {
+.toy-brands .sl-brand a:nth-of-type(2) .page img, .toy-brands a:nth-of-type(8) .page img {
   margin: 31px 0 0 20px;
 }
 
-.toy-brands a:nth-of-type(3) .page img, .toy-brands a:nth-of-type(9) .page img {
+.toy-brands .sl-brand a:nth-of-type(3) .page img, .toy-brands a:nth-of-type(9) .page img {
   margin: 39px 0 0 20px;
 }
 
-.toy-brands a:nth-of-type(4) .page img, .toy-brands a:nth-of-type(10) .page img {
+.toy-brands .sl-brand a:nth-of-type(4) .page img, .toy-brands a:nth-of-type(10) .page img {
   margin: 22px 0 0 32px;
 }
 
-.toy-brands a:nth-of-type(5) .page img, .toy-brands a:nth-of-type(11) .page img {
+.toy-brands .sl-brand a:nth-of-type(5) .page img, .toy-brands a:nth-of-type(11) .page img {
   margin: 27px 0 0 28px;
 }
 
-.toy-brands a:nth-of-type(6) .page img, .toy-brands a:nth-of-type(12) .page img {
+.toy-brands .sl-brand a:nth-of-type(6) .page img, .toy-brands a:nth-of-type(12) .page img {
   margin: 34px 0 0 22px;
 }
 
-.toy-brands a:nth-of-type(12) .page {
+.toy-brands .sl-brand a:nth-of-type(12) .page {
   margin: 0;
-}
-
-/*блоки с товарными брендами*/
-.toy-brands #overflow {
-  overflow: hidden;
-}
-
-.toy-brands #slider input {
-  display: none;
-}
-
-.toy-brands #controls {
-  position: absolute;
-  top: 63px;
-  left: 0;
-  height: 50px;
-}
-
-.toy-brands #controls label {
-  display: none;
-  cursor: pointer;
-}
-
-.toy-brands #controls label:hover {
-  opacity: 0.8;
-}
-
-/* перелистывание товаров */
-#slide1-2:checked ~ #controls label:nth-child(2),
-#slide2-2:checked ~ #controls label:nth-child(3),
-#slide3-2:checked ~ #controls label:nth-child(4),
-#slide4-2:checked ~ #controls label:nth-child(5),
-#slide5-2:checked ~ #controls label:nth-child(1) {
-  position: relative;
-  left: 1179px;
-  width: 25px;
-  height: 25px;
-  background: url(../img/arrow-right.png);
-  float: right;
-  /*в правый угол*/
-  display: block;
-}
-
-#slide1-2:checked ~ #controls label:nth-child(5),
-#slide2-2:checked ~ #controls label:nth-child(1),
-#slide3-2:checked ~ #controls label:nth-child(2),
-#slide4-2:checked ~ #controls label:nth-child(3),
-#slide5-2:checked ~ #controls label:nth-child(4) {
-  width: 25px;
-  height: 25px;
-  background: url(../img/arrow.png);
-  float: left;
-  display: block;
-  margin-left: -54px;
-}
-
-#slide1-2:checked ~ #slides .inner {
-  margin-left: 0;
-}
-
-#slide2-2:checked ~ #slides .inner {
-  margin-left: -196px;
-}
-
-#slide3-2:checked ~ #slides .inner {
-  margin-left: -392px;
-}
-
-#slide4-2:checked ~ #slides .inner {
-  margin-left: -588px;
-}
-
-#slide5-2:checked ~ #slides .inner {
-  margin-left: -784px;
-}
-
-#slides .inner {
-  transition: all 0.8s ease-in-out;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
 }
 
 /*блок с информацией о компании*/
@@ -1906,62 +1808,28 @@ footer {
     width: auto;
     max-width: 1170px;
   }
-  .toy-brands .page {
+  .toy-brands .sl-brand a .page {
     margin-right: 10px;
+    width: 158px;
+    min-width: auto;
   }
-  .toy-brands a:nth-of-type(1) .page img, .toy-brands a:nth-of-type(7) .page img {
+  .toy-brands .sl-brand a:nth-of-type(1) .page img, .toy-brands a:nth-of-type(7) .page img {
     margin: 11px 0 0 0px;
   }
-  .toy-brands a:nth-of-type(2) .page img, .toy-brands a:nth-of-type(8) .page img {
+  .toy-brands .sl-brand a:nth-of-type(2) .page img, .toy-brands a:nth-of-type(8) .page img {
     margin: 31px 0 0 17px;
   }
-  .toy-brands a:nth-of-type(3) .page img, .toy-brands a:nth-of-type(9) .page img {
+  .toy-brands .sl-brand a:nth-of-type(3) .page img, .toy-brands a:nth-of-type(9) .page img {
     margin: 39px 0 0 17px;
   }
-  .toy-brands a:nth-of-type(4) .page img, .toy-brands a:nth-of-type(10) .page img {
+  .toy-brands .sl-brand a:nth-of-type(4) .page img, .toy-brands a:nth-of-type(10) .page img {
     margin: 22px 0 0 29px;
   }
-  .toy-brands a:nth-of-type(5) .page img, .toy-brands a:nth-of-type(11) .page img {
+  .toy-brands .sl-brand a:nth-of-type(5) .page img, .toy-brands a:nth-of-type(11) .page img {
     margin: 27px 0 0 25px;
   }
-  .toy-brands a:nth-of-type(6) .page img, .toy-brands a:nth-of-type(12) .page img {
+  .toy-brands .sl-brand a:nth-of-type(6) .page img, .toy-brands a:nth-of-type(12) .page img {
     margin: 34px 0 0 19px;
-  }
-  .toy-brands #slider {
-    width: 875px;
-  }
-  .toy-brands .inner {
-    width: 2200px;
-  }
-  #slide1-2:checked ~ #controls label:nth-child(2),
-  #slide2-2:checked ~ #controls label:nth-child(3),
-  #slide3-2:checked ~ #controls label:nth-child(4),
-  #slide4-2:checked ~ #controls label:nth-child(5),
-  #slide5-2:checked ~ #controls label:nth-child(1) {
-    left: 1703%;
-    margin-left: 0;
-  }
-  #slide1-2:checked ~ #controls label:nth-child(5),
-  #slide2-2:checked ~ #controls label:nth-child(1),
-  #slide3-2:checked ~ #controls label:nth-child(2),
-  #slide4-2:checked ~ #controls label:nth-child(3),
-  #slide5-2:checked ~ #controls label:nth-child(4) {
-    margin-left: -60%;
-  }
-  #slide1-2:checked ~ #slides .inner {
-    margin-left: 0;
-  }
-  #slide2-2:checked ~ #slides .inner {
-    margin-left: -20%;
-  }
-  #slide3-2:checked ~ #slides .inner {
-    margin-left: -40%;
-  }
-  #slide4-2:checked ~ #slides .inner {
-    margin-left: -60%;
-  }
-  #slide5-2:checked ~ #slides .inner {
-    margin-left: -80%;
   }
   .about-company {
     width: auto;
@@ -2036,6 +1904,40 @@ footer {
   }
   .footer ul:nth-of-type(-n+3) {
     margin-left: 4%;
+  }
+}
+
+@media only screen and (min-width: 970px) and (max-width: 1100px) {
+  .toy-brands .sl-brand a .page {
+    margin-right: 10px;
+    width: 143px;
+    height: 150px;
+    min-width: auto;
+  }
+  .toy-brands .sl-brand a:nth-of-type(1) .page img, .toy-brands a:nth-of-type(7) .page img {
+    width: 100%;
+    margin: 11px auto 0 auto;
+  }
+  .toy-brands .sl-brand a:nth-of-type(2) .page img, .toy-brands a:nth-of-type(8) .page img {
+    margin: 31px auto 0 auto;
+  }
+  .toy-brands .sl-brand a:nth-of-type(3) .page img, .toy-brands a:nth-of-type(9) .page img {
+    margin: 39px auto 0 auto;
+  }
+  .toy-brands .sl-brand a:nth-of-type(4) .page img, .toy-brands a:nth-of-type(10) .page img {
+    margin: 22px auto 0 auto;
+  }
+  .toy-brands .sl-brand a:nth-of-type(5) .page img, .toy-brands a:nth-of-type(11) .page img {
+    margin: 27px auto 0 auto;
+  }
+  .toy-brands .sl-brand a:nth-of-type(6) .page img, .toy-brands a:nth-of-type(12) .page img {
+    margin: 34px auto 0 auto;
+  }
+  .toy-brands .sl-brand .slick-next {
+    right: -11px;
+  }
+  .toy-brands .sl-brand .slick-prev, .toy-brands .sl-brand .slick-next {
+    top: 41%;
   }
 }
 
@@ -2578,64 +2480,40 @@ footer {
     width: 100%;
     margin: 0 auto 5% auto;
   }
-  .toy-brands .page {
-    width: 156px;
-    height: 145px;
-    margin-right: 10px;
+  .toy-brands .sl-brand a .page {
+    width: 15vw;
+    height: 35vh;
+    margin: 0 1vw 0 0;
   }
-  .toy-brands a:nth-of-type(1) .page img, .toy-brands a:nth-of-type(7) .page img {
-    margin: 4px 0 0 0px;
+  .toy-brands .sl-brand a:nth-of-type(1) .page img, .toy-brands a:nth-of-type(7) .page img {
+    width: 80%;
+    margin: 3.5vh auto 0 auto;
   }
-  .toy-brands a:nth-of-type(2) .page img, .toy-brands a:nth-of-type(8) .page img {
-    margin: 20px 0 0 17px;
+  .toy-brands .sl-brand a:nth-of-type(2) .page img, .toy-brands a:nth-of-type(8) .page img {
+    width: 70%;
+    margin: 6vh auto 0 auto;
   }
-  .toy-brands a:nth-of-type(3) .page img, .toy-brands a:nth-of-type(9) .page img {
-    margin: 32px 0 0 17px;
+  .toy-brands .sl-brand a:nth-of-type(3) .page img, .toy-brands a:nth-of-type(9) .page img {
+    width: 70%;
+    margin: 8vh auto 0 auto;
   }
-  .toy-brands a:nth-of-type(4) .page img, .toy-brands a:nth-of-type(10) .page img {
-    margin: 16px 0 0 29px;
+  .toy-brands .sl-brand a:nth-of-type(4) .page img, .toy-brands a:nth-of-type(10) .page img {
+    width: 60%;
+    margin: 4vh auto 0 auto;
   }
-  .toy-brands a:nth-of-type(5) .page img, .toy-brands a:nth-of-type(11) .page img {
-    margin: 24px 0 0 25px;
+  .toy-brands .sl-brand a:nth-of-type(5) .page img, .toy-brands a:nth-of-type(11) .page img {
+    width: 70%;
+    margin: 4vh auto 0 auto;
   }
-  .toy-brands a:nth-of-type(6) .page img, .toy-brands a:nth-of-type(12) .page img {
-    margin: 25px 0 0 19px;
+  .toy-brands .sl-brand a:nth-of-type(6) .page img, .toy-brands a:nth-of-type(12) .page img {
+    width: 70%;
+    margin: 7vh auto 0 auto;
   }
-  .toy-brands #slider {
-    width: 668px;
-  }
-  .toy-brands .inner {
-    width: 2200px;
-  }
-  #slide1-2:checked ~ #controls label:nth-child(2),
-  #slide2-2:checked ~ #controls label:nth-child(3),
-  #slide3-2:checked ~ #controls label:nth-child(4),
-  #slide4-2:checked ~ #controls label:nth-child(5),
-  #slide5-2:checked ~ #controls label:nth-child(1) {
-    left: 1283%;
-    margin-left: 0;
-  }
-  #slide1-2:checked ~ #controls label:nth-child(5),
-  #slide2-2:checked ~ #controls label:nth-child(1),
-  #slide3-2:checked ~ #controls label:nth-child(2),
-  #slide4-2:checked ~ #controls label:nth-child(3),
-  #slide5-2:checked ~ #controls label:nth-child(4) {
-    margin-left: -60%;
-  }
-  #slide1-2:checked ~ #slides .inner {
-    margin-left: 0;
-  }
-  #slide2-2:checked ~ #slides .inner {
-    margin-left: -25%;
-  }
-  #slide3-2:checked ~ #slides .inner {
-    margin-left: -50%;
-  }
-  #slide4-2:checked ~ #slides .inner {
-    margin-left: -75%;
-  }
-  #slide5-2:checked ~ #slides .inner {
-    margin-left: -100%;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 850px) {
+  .toy-brands .sl-brand a .page {
+    height: 30vh;
   }
 }
 
